@@ -1,0 +1,9 @@
+{"question": "What is the topic of this chapter?", "answer": "Enums and pattern matching."}
+{"question": "What is another name for enumerations?", "answer": "Enums."}
+{"question": "What do enums allow you to do?", "answer": "Define a type by enumerating its possible values."}
+{"question": "What is a particularly useful enum in Rust?", "answer": "The `Option` enum."}
+{"question": "What does the `Option` enum express?", "answer": "That a value can be either something or nothing."}
+{"question": "What makes it easy to run different code for different values of an enum?", "answer": "Pattern matching in the `match` expression."}
+{"question": "What is another convenient and concise idiom for handling enums?", "answer": "The `if let` construct."}
+{"question": "What are Rust's enums most similar to in functional languages?", "answer": "Algebraic data types."}
+{"question": "What are some examples of functional languages that have algebraic data types?", "answer": "F#, OCaml, and Haskell."}

@@ -1,0 +1,24 @@
+{"question": "How can we improve `minigrep` by adding an extra feature?", "answer": "We can add an option for case-insensitive searching that the user can turn on via an environment variable."}
+{"question": "Why use an environment variable instead of a command line option for case-insensitive searching?", "answer": "Using an environment variable allows users to set it once and have all their searches be case insensitive in that terminal session."}
+{"question": "What is the first step in adding a new `search_case_insensitive` function?", "answer": "Write a failing test for the new function."}
+{"question": "What is the name of the new test added for the `search_case_insensitive` function?", "answer": "The new test is named `case_insensitive`."}
+{"question": "What is the name of the old test that was renamed to clarify the difference between the two tests?", "answer": "The old test was renamed from `one_result` to `case_sensitive`."}
+{"question": "What is the purpose of changing the `contents` in the `case_sensitive` test?", "answer": "Changing the `contents` ensures that the case-sensitive search functionality is not accidentally broken."}
+{"question": "What is the query used in the `case_insensitive` test?", "answer": "The query used is `\"rUsT\"`."}
+{"question": "What is the expected behavior of the `search_case_insensitive` function in the `case_insensitive` test?", "answer": "The query `\"rUsT\"` should match the line containing `\"Rust:\"` and the line `\"Trust me.\"` regardless of casing."}
+{"question": "What is the difference between the `search` and `search_case_insensitive` functions?", "answer": "The `search_case_insensitive` function lowercases both the `query` and each `line` before comparing them."}
+{"question": "Why is the `query` variable a `String` rather than a string slice after calling `to_lowercase`?", "answer": "Calling `to_lowercase` creates new data rather than referencing existing data, so a new `String` is allocated."}
+{"question": "What is the purpose of adding a `case_sensitive` field to the `Config` struct?", "answer": "The `case_sensitive` field will be used to switch between case-sensitive and case-insensitive search."}
+{"question": "How does the `run` function decide whether to call `search` or `search_case_insensitive`?", "answer": "The `run` function checks the value of the `case_sensitive` field in the `Config` instance."}
+{"question": "What environment variable is checked to determine whether to perform a case-sensitive or case-insensitive search?", "answer": "The environment variable `CASE_INSENSITIVE` is checked."}
+{"question": "What function is used to check for the `CASE_INSENSITIVE` environment variable?", "answer": "The `env::var` function is used."}
+{"question": "What does the `env::var` function return if the environment variable is set?", "answer": "It returns an `Ok` variant containing the value of the environment variable."}
+{"question": "What does the `env::var` function return if the environment variable is not set?", "answer": "It returns an `Err` variant."}
+{"question": "How is the `case_sensitive` variable set based on the `CASE_INSENSITIVE` environment variable?", "answer": "The `case_sensitive` variable is set to `true` if the `CASE_INSENSITIVE` environment variable is not set (i.e., `is_err` returns `true`)."}
+{"question": "What happens if the `CASE_INSENSITIVE` environment variable is set to any value?", "answer": "The program will perform a case-insensitive search."}
+{"question": "How is the value of the `case_sensitive` variable passed to the `Config` instance?", "answer": "The value is passed as an argument when creating the `Config` instance."}
+{"question": "What happens when the program is run without the `CASE_INSENSITIVE` environment variable set?", "answer": "The program performs a case-sensitive search."}
+{"question": "What happens when the program is run with the `CASE_INSENSITIVE` environment variable set to `1`?", "answer": "The program performs a case-insensitive search."}
+{"question": "What is an alternative way to control case insensitivity in a program?", "answer": "Case insensitivity can also be controlled through a command line argument."}
+{"question": "What is a possible exercise for the reader?", "answer": "Try controlling case insensitivity through either a command line argument or an environment variable, and decide which should take precedence if both are set to different values."}
+{"question": "What module in the standard library provides functions for working with environment variables?", "answer": "The `std::env` module provides functions for working with environment variables."}

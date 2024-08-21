@@ -1,0 +1,24 @@
+{"question": "What is Cargo?", "answer": "Cargo is Rust's build system and package manager."}
+{"question": "What are the benefits of using Cargo?", "answer": "Cargo handles tasks such as building your code, downloading dependencies, and building those dependencies."}
+{"question": "What are dependencies?", "answer": "Dependencies are libraries that your code needs."}
+{"question": "How do I check if Cargo is installed?", "answer": "Run the command `cargo --version` in your terminal."}
+{"question": "What does the command `cargo new hello_cargo --bin` do?", "answer": "It creates a new binary executable project named `hello_cargo`."}
+{"question": "What is the difference between a binary and a library?", "answer": "A binary is an executable application, while a library is a collection of code that can be used by other programs."}
+{"question": "What files are generated when you create a new project with Cargo?", "answer": "Cargo generates a `Cargo.toml` file, a `src` directory with a `main.rs` file inside, and a `.gitignore` file."}
+{"question": "What is the purpose of the `Cargo.toml` file?", "answer": "It is Cargo's configuration file, written in TOML format."}
+{"question": "What information is stored in the `Cargo.toml` file?", "answer": "It stores the project's name, version, authors, and dependencies."}
+{"question": "What is the purpose of the `src` directory?", "answer": "It contains the source code for your project."}
+{"question": "What is the purpose of the `main.rs` file?", "answer": "It contains the main function of your program."}
+{"question": "How do you build a Cargo project?", "answer": "Run the command `cargo build`."}
+{"question": "Where is the executable file created by `cargo build` stored?", "answer": "It is stored in the `target/debug` directory."}
+{"question": "How do you run a Cargo project?", "answer": "Run the command `./target/debug/hello_cargo` (or `.\\target\\debug\\hello_cargo.exe` on Windows)."}
+{"question": "What is the purpose of the `Cargo.lock` file?", "answer": "It keeps track of the exact versions of dependencies in your project."}
+{"question": "What does the command `cargo run` do?", "answer": "It compiles the code and then runs the resulting executable."}
+{"question": "What does the command `cargo check` do?", "answer": "It quickly checks your code to make sure it compiles but doesn't produce an executable."}
+{"question": "Why is `cargo check` faster than `cargo build`?", "answer": "It skips the step of producing an executable."}
+{"question": "How do you build a project for release?", "answer": "Run the command `cargo build --release`."}
+{"question": "Where is the executable file created by `cargo build --release` stored?", "answer": "It is stored in the `target/release` directory."}
+{"question": "What are the benefits of using `cargo build --release`?", "answer": "It compiles the code with optimizations, making it run faster."}
+{"question": "What are the advantages of using Cargo?", "answer": "It simplifies building and managing complex projects, provides consistent commands across operating systems, and helps organize projects."}
+{"question": "How do you check out code from a Git repository and build it using Cargo?", "answer": "Use the commands `git clone someurl.com/someproject`, `cd someproject`, and `cargo build`."}
+{"question": "Where can I find more information about Cargo?", "answer": "Check out its documentation at https://doc.rust-lang.org/cargo/."}

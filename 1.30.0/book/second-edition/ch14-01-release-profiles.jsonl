@@ -1,0 +1,9 @@
+{"question": "What are release profiles in Rust?", "answer": "Release profiles are predefined and customizable configurations that allow programmers to control how their code is compiled."}
+{"question": "What are the two main release profiles in Cargo?", "answer": "The two main profiles are `dev` and `release`, used by `cargo build` and `cargo build --release` respectively."}
+{"question": "What are the default settings for the `dev` and `release` profiles?", "answer": "The `dev` profile is optimized for development with good defaults, while the `release` profile is optimized for release builds with good defaults."}
+{"question": "How can I customize the settings for a release profile?", "answer": "You can override default settings by adding `[profile.*]` sections to your project's `Cargo.toml` file."}
+{"question": "What is the `opt-level` setting and how does it affect compilation?", "answer": "The `opt-level` setting controls the level of optimization applied to your code, ranging from 0 to 3. Higher levels result in longer compilation times but faster code execution."}
+{"question": "What is the default `opt-level` for the `dev` profile?", "answer": "The default `opt-level` for the `dev` profile is 0, prioritizing faster compilation times."}
+{"question": "What is the default `opt-level` for the `release` profile?", "answer": "The default `opt-level` for the `release` profile is 3, prioritizing code execution speed."}
+{"question": "How can I override the default `opt-level` for the `dev` profile?", "answer": "You can add a `[profile.dev]` section to your `Cargo.toml` file and set the `opt-level` to a different value."}
+{"question": "Where can I find a complete list of configuration options and defaults for each profile?", "answer": "You can find the complete list in Cargo's documentation at https://doc.rust-lang.org/cargo/."}

@@ -1,0 +1,6 @@
+{"question": "What is object-oriented programming (OOP)?", "answer": "OOP is a way of modeling programs using objects."}
+{"question": "Where did the concept of objects originate?", "answer": "Objects originated from Simula in the 1960s."}
+{"question": "Who coined the term \"object-oriented programming\"?", "answer": "Alan Kay coined the term in 1967."}
+{"question": "What is the core concept of OOP according to Alan Kay?", "answer": "Objects pass messages to each other."}
+{"question": "Is Rust considered object-oriented?", "answer": "There are competing definitions of OOP, some of which would classify Rust as object-oriented, while others would not."}
+{"question": "What will this chapter explore?", "answer": "This chapter will explore common OOP characteristics and how they translate to Rust, demonstrate an OOP design pattern in Rust, and discuss the trade-offs of using OOP versus other Rust solutions."}

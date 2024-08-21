@@ -1,0 +1,13 @@
+{"question": "What is the default behavior of `cargo test`?", "answer": "It compiles your code in test mode and runs the resulting test binary, running all tests in parallel and capturing output generated during test runs."}
+{"question": "How can I specify command line options for `cargo test`?", "answer": "List the arguments that go to `cargo test` followed by the separator `--` and then the ones that go to the test binary."}
+{"question": "How can I see the options available for `cargo test`?", "answer": "Run `cargo test --help`."}
+{"question": "How can I see the options available for the test binary?", "answer": "Run `cargo test -- --help`."}
+{"question": "How do I run tests consecutively instead of in parallel?", "answer": "Use the `--test-threads=1` flag with the test binary."}
+{"question": "What should I be aware of when running tests in parallel?", "answer": "Make sure your tests don’t depend on each other or on any shared state, including a shared environment."}
+{"question": "What happens to output printed to standard output by passing tests?", "answer": "It is captured by Rust’s test library and not displayed in the terminal."}
+{"question": "What happens to output printed to standard output by failing tests?", "answer": "It is displayed in the test summary output along with the cause of the test failure."}
+{"question": "How can I see the output printed to standard output by passing tests?", "answer": "Use the `--nocapture` flag with the test binary."}
+{"question": "How can I run a specific test by name?", "answer": "Pass the name of the test function to `cargo test` as an argument."}
+{"question": "How can I run multiple tests by filtering on part of their names?", "answer": "Pass `cargo test` a string that is part of the names of the tests you want to run."}
+{"question": "How can I ignore a test during most runs of `cargo test`?", "answer": "Add the `#[ignore]` attribute to the test function."}
+{"question": "How can I run only the ignored tests?", "answer": "Use `cargo test -- --ignored`."}

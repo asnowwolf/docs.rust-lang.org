@@ -1,0 +1,13 @@
+{"question": "What are the two forms of patterns?", "answer": "Patterns come in two forms: refutable and irrefutable."}
+{"question": "What is an irrefutable pattern?", "answer": "Patterns that will match for any possible value passed are irrefutable."}
+{"question": "Give an example of an irrefutable pattern.", "answer": "An example of an irrefutable pattern is `x` in the statement `let x = 5;`."}
+{"question": "What is a refutable pattern?", "answer": "Patterns that can fail to match for some possible value are refutable."}
+{"question": "Give an example of a refutable pattern.", "answer": "An example of a refutable pattern is `Some(x)` in the expression `if let Some(x) = a_value`."}
+{"question": "What constructs can only accept irrefutable patterns?", "answer": "Function parameters, `let` statements, and `for` loops can only accept irrefutable patterns."}
+{"question": "Why can function parameters, `let` statements, and `for` loops only accept irrefutable patterns?", "answer": "The program cannot do anything meaningful when values don’t match."}
+{"question": "What constructs can only accept refutable patterns?", "answer": "The `if let` and `while let` expressions only accept refutable patterns."}
+{"question": "Why can `if let` and `while let` expressions only accept refutable patterns?", "answer": "They’re intended to handle possible failure: the functionality of a conditional is in its ability to perform differently depending on success or failure."}
+{"question": "What happens when we try to use a refutable pattern where Rust requires an irrefutable pattern?", "answer": "Rust will complain that we’ve tried to use a refutable pattern where an irrefutable pattern is required."}
+{"question": "How can we fix the problem where we have a refutable pattern where an irrefutable pattern is needed?", "answer": "We can change the code that uses the pattern: instead of using `let`, we can use `if let`."}
+{"question": "What happens if we give `if let` a pattern that will always match?", "answer": "Rust will complain that it doesn’t make sense to use `if let` with an irrefutable pattern."}
+{"question": "What is the rule for refutable patterns in `match` arms?", "answer": "Match arms must use refutable patterns, except for the last arm, which should match any remaining values with an irrefutable pattern."}

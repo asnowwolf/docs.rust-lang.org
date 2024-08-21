@@ -1,0 +1,37 @@
+{"question": "What are Rust keywords?", "answer": "Keywords are reserved words that cannot be used as identifiers, such as names of functions, variables, parameters, struct fields, modules, crates, constants, macros, static values, attributes, types, traits, or lifetimes."}
+{"question": "What is the purpose of the `as` keyword?", "answer": "The `as` keyword is used for primitive casting, disambiguating the specific trait containing an item, or renaming items in `use` and `extern crate` statements."}
+{"question": "What does the `break` keyword do?", "answer": "The `break` keyword exits a loop immediately."}
+{"question": "What is the purpose of the `const` keyword?", "answer": "The `const` keyword defines constant items or constant raw pointers."}
+{"question": "What does the `continue` keyword do?", "answer": "The `continue` keyword continues to the next loop iteration."}
+{"question": "What is the purpose of the `crate` keyword?", "answer": "The `crate` keyword links an external crate or a macro variable representing the crate in which the macro is defined."}
+{"question": "What does the `else` keyword do?", "answer": "The `else` keyword provides a fallback for `if` and `if let` control flow constructs."}
+{"question": "What is the purpose of the `enum` keyword?", "answer": "The `enum` keyword defines an enumeration."}
+{"question": "What does the `extern` keyword do?", "answer": "The `extern` keyword links an external crate, function, or variable."}
+{"question": "What is the purpose of the `false` keyword?", "answer": "The `false` keyword represents the Boolean false literal."}
+{"question": "What does the `fn` keyword do?", "answer": "The `fn` keyword defines a function or the function pointer type."}
+{"question": "What is the purpose of the `for` keyword?", "answer": "The `for` keyword loops over items from an iterator, implements a trait, or specifies a higher-ranked lifetime."}
+{"question": "What does the `if` keyword do?", "answer": "The `if` keyword branches based on the result of a conditional expression."}
+{"question": "What is the purpose of the `impl` keyword?", "answer": "The `impl` keyword implements inherent or trait functionality."}
+{"question": "What does the `in` keyword do?", "answer": "The `in` keyword is part of the `for` loop syntax."}
+{"question": "What is the purpose of the `let` keyword?", "answer": "The `let` keyword binds a variable."}
+{"question": "What does the `loop` keyword do?", "answer": "The `loop` keyword loops unconditionally."}
+{"question": "What is the purpose of the `match` keyword?", "answer": "The `match` keyword matches a value to patterns."}
+{"question": "What does the `mod` keyword do?", "answer": "The `mod` keyword defines a module."}
+{"question": "What is the purpose of the `move` keyword?", "answer": "The `move` keyword makes a closure take ownership of all its captures."}
+{"question": "What does the `mut` keyword do?", "answer": "The `mut` keyword denotes mutability in references, raw pointers, or pattern bindings."}
+{"question": "What is the purpose of the `pub` keyword?", "answer": "The `pub` keyword denotes public visibility in struct fields, `impl` blocks, or modules."}
+{"question": "What does the `ref` keyword do?", "answer": "The `ref` keyword binds by reference."}
+{"question": "What is the purpose of the `return` keyword?", "answer": "The `return` keyword returns from a function."}
+{"question": "What does the `Self` keyword represent?", "answer": "The `Self` keyword is a type alias for the type implementing a trait."}
+{"question": "What is the purpose of the `self` keyword?", "answer": "The `self` keyword represents the method subject or current module."}
+{"question": "What does the `static` keyword do?", "answer": "The `static` keyword defines a global variable or lifetime lasting the entire program execution."}
+{"question": "What is the purpose of the `struct` keyword?", "answer": "The `struct` keyword defines a structure."}
+{"question": "What does the `super` keyword represent?", "answer": "The `super` keyword represents the parent module of the current module."}
+{"question": "What is the purpose of the `trait` keyword?", "answer": "The `trait` keyword defines a trait."}
+{"question": "What does the `true` keyword represent?", "answer": "The `true` keyword represents the Boolean true literal."}
+{"question": "What is the purpose of the `type` keyword?", "answer": "The `type` keyword defines a type alias or associated type."}
+{"question": "What does the `unsafe` keyword do?", "answer": "The `unsafe` keyword denotes unsafe code, functions, traits, or implementations."}
+{"question": "What is the purpose of the `use` keyword?", "answer": "The `use` keyword imports symbols into scope."}
+{"question": "What does the `where` keyword do?", "answer": "The `where` keyword denotes clauses that constrain a type."}
+{"question": "What is the purpose of the `while` keyword?", "answer": "The `while` keyword loops conditionally based on the result of an expression."}
+{"question": "What are the keywords reserved for future use in Rust?", "answer": "The keywords `abstract`, `alignof`, `become`, `box`, `do`, `final`, `macro`, `offsetof`, `override`, `priv`, `proc`, `pure`, `sizeof`, `typeof`, `unsized`, `virtual`, and `yield` are reserved for potential future use."}

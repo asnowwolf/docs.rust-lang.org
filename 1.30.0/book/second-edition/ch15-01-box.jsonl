@@ -1,0 +1,17 @@
+{"question": "What is a box in Rust?", "answer": "A box is a smart pointer with the type `Box<T>` that allows you to store data on the heap rather than the stack."}
+{"question": "What is the difference between the stack and the heap?", "answer": "Refer to Chapter 4 for a review of the difference between the stack and the heap."}
+{"question": "What is the performance overhead of using a box?", "answer": "Boxes have no performance overhead other than storing their data on the heap instead of the stack."}
+{"question": "When should I use a box?", "answer": "You should use a box when you have a type whose size can't be known at compile time, when you have a large amount of data and want to transfer ownership without copying, or when you want to own a value and only care that it implements a particular trait."}
+{"question": "How do I store an `i32` value on the heap using a box?", "answer": "Use `Box::new(5)` to create a box that points to the value `5` on the heap."}
+{"question": "What happens when a box goes out of scope?", "answer": "When a box goes out of scope, both the box itself (stored on the stack) and the data it points to (stored on the heap) are deallocated."}
+{"question": "What is a recursive type?", "answer": "A recursive type is a type where a value can have as part of itself another value of the same type."}
+{"question": "Why can't Rust determine the size of a recursive type at compile time?", "answer": "Because the nesting of values could theoretically continue infinitely, Rust doesn't know how much space a value of a recursive type needs."}
+{"question": "What is a cons list?", "answer": "A cons list is a data structure that comes from the Lisp programming language and its dialects. It is a recursive data structure where each item contains two elements: the value of the current item and the next item."}
+{"question": "What is the base case of a cons list?", "answer": "The base case of a cons list is `Nil`, which is a value without a next item."}
+{"question": "Why does the `List` enum in Listing 15-2 not compile?", "answer": "The `List` enum doesn't have a known size because it is recursively defined."}
+{"question": "How can I fix the error in Listing 15-4?", "answer": "Insert indirection by using a `Box<T>` to store the next `List` value on the heap instead of directly inside the `Cons` variant."}
+{"question": "What is the size of a `List` value after using a `Box<T>`?", "answer": "The size of a `List` value is the size of an `i32` plus the size of a box's pointer data."}
+{"question": "What are the benefits of using a box?", "answer": "Boxes provide indirection and heap allocation without any other special capabilities or performance overhead."}
+{"question": "What traits does the `Box<T>` type implement?", "answer": "The `Box<T>` type implements the `Deref` and `Drop` traits."}
+{"question": "What does the `Deref` trait allow?", "answer": "The `Deref` trait allows `Box<T>` values to be treated like references."}
+{"question": "What does the `Drop` trait do?", "answer": "The `Drop` trait implementation ensures that the heap data that the box is pointing to is cleaned up when the box goes out of scope."}

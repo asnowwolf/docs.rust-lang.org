@@ -1,0 +1,18 @@
+{"question": "Why are we receiving warnings about unused functions in our `communicator` library?", "answer": "The `client::connect`, `network::connect`, and `network::server::connect` functions are not being used within our own project, but they are intended to be used by other projects."}
+{"question": "How do we create a binary crate in the same directory as our library crate?", "answer": "Create a *src/main.rs* file containing the code that will use the library crate."}
+{"question": "What is the purpose of the `extern crate` command?", "answer": "It brings the `communicator` library crate into scope, allowing the binary crate to use its functions."}
+{"question": "What is the root module of a crate?", "answer": "The top-level module of a crate, which has the same name as the crate."}
+{"question": "Where should the `extern crate` command be placed?", "answer": "In the root module of the project, either *src/main.rs* or *src/lib.rs*."}
+{"question": "What is the default state of all code in Rust?", "answer": "Private, meaning it can only be accessed by code within the same module."}
+{"question": "Why does Rust warn about unused private functions?", "answer": "Because they are only accessible within the current module, and if they are not used, it might indicate a bug or unnecessary code."}
+{"question": "How do we make a function public?", "answer": "Add the `pub` keyword before the function declaration."}
+{"question": "What is the purpose of making a function public?", "answer": "It allows code outside of the current module to access the function, and it prevents Rust from warning about unused code."}
+{"question": "How do we make a module public?", "answer": "Add the `pub` keyword before the `mod` declaration."}
+{"question": "What are the rules for item visibility in Rust?", "answer": "Public items can be accessed from any parent module, while private items can only be accessed by their immediate parent module and any of its child modules."}
+{"question": "What is the purpose of the `try_me` function in Listing 7-6?", "answer": "It demonstrates the visibility rules by attempting to access various functions within nested modules."}
+{"question": "Why does the call to `outermost::middle_function` work in the `try_me` function?", "answer": "Because `middle_function` is public and `try_me` is accessing it through its parent module `outermost`, which is accessible from the root module."}
+{"question": "Why does the call to `outermost::middle_secret_function` cause a compilation error?", "answer": "Because `middle_secret_function` is private, and the root module is neither its current module nor a child module of its current module."}
+{"question": "Why can't the `try_me` function call `outermost::inside::inner_function` or `outermost::inside::secret_function`?", "answer": "Because the `inside` module is private and has no child modules, so it can only be accessed by its current module `outermost`."}
+{"question": "What happens if the `inside` module is made public?", "answer": "The `try_me` function will be able to access `inner_function` because it is now public and accessible through its parent module `inside`."}
+{"question": "What happens if `outermost` is public and `inside` is private?", "answer": "The `try_me` function will still be able to access `inner_function` because it is public and accessible through its parent module `inside`, which is accessible from the root module."}
+{"question": "What happens if, in the body of `inner_function`, you call `::outermost::middle_secret_function()`?", "answer": "This will still cause a compilation error because `middle_secret_function` is private and cannot be accessed from the `inside` module."}

@@ -1,0 +1,25 @@
+{"question": "What is a limitation of vectors in Rust?", "answer": "Vectors can only store elements of one type."}
+{"question": "How can we store different types of data in a vector?", "answer": "We can define an enum with variants to hold different types, like in Listing 8-10."}
+{"question": "What is the problem with using enums to store different types in a vector?", "answer": "It only works for a fixed set of types that we know at compile time."}
+{"question": "What if we want our library users to be able to extend the set of types that are valid in a particular situation?", "answer": "We can use trait objects to allow for values of different types."}
+{"question": "What is a trait object?", "answer": "A trait object points to both an instance of a type implementing a specified trait and a table used to look up trait methods on that type at runtime."}
+{"question": "How do we create a trait object?", "answer": "We specify a pointer, like a `&` reference or a `Box<T>` smart pointer, and then specify the relevant trait."}
+{"question": "What is the difference between trait objects and structs or enums?", "answer": "Trait objects combine data and behavior, while structs and enums separate them."}
+{"question": "What is the purpose of trait objects?", "answer": "They allow abstraction across common behavior."}
+{"question": "What is the `Draw` trait?", "answer": "A trait with a single method named `draw`."}
+{"question": "What is the `Screen` struct?", "answer": "A struct that holds a vector of `Box<Draw>` trait objects, representing components to be drawn."}
+{"question": "What does the `run` method on the `Screen` struct do?", "answer": "It calls the `draw` method on each of its components."}
+{"question": "What is the difference between using trait objects and using generics with trait bounds?", "answer": "Trait objects allow for multiple concrete types to be used at runtime, while generics can only be substituted with one concrete type at a time."}
+{"question": "How do we implement the `Draw` trait?", "answer": "We define a struct that implements the `Draw` trait and provides an implementation for the `draw` method."}
+{"question": "What is the `Button` struct?", "answer": "A struct that implements the `Draw` trait and has fields for `width`, `height`, and `label`."}
+{"question": "What is the `SelectBox` struct?", "answer": "A struct that implements the `Draw` trait and has fields for `width`, `height`, and `options`."}
+{"question": "How do we use trait objects to store values of different types that implement the same trait?", "answer": "We create a `Screen` instance and add `Box<Button>` and `Box<SelectBox>` to its `components` vector."}
+{"question": "What happens if we try to create a `Screen` with a `String` as a component?", "answer": "We get an error because `String` doesn't implement the `Draw` trait."}
+{"question": "What is dynamic dispatch?", "answer": "When the compiler can't tell at compile time which method to call, and the method is chosen at runtime."}
+{"question": "What is static dispatch?", "answer": "When the compiler knows which method to call at compile time."}
+{"question": "What is the performance difference between dynamic and static dispatch?", "answer": "Dynamic dispatch has a runtime cost for method lookup, while static dispatch is faster."}
+{"question": "What is object safety?", "answer": "A set of rules that govern whether a trait can be made into a trait object."}
+{"question": "What are the two main rules for object safety?", "answer": "The return type of a trait method cannot be `Self`, and there cannot be any generic type parameters."}
+{"question": "Why are these rules necessary for object safety?", "answer": "Because trait objects forget the concrete type that implements the trait, so methods that return `Self` or have generic type parameters cannot be used with trait objects."}
+{"question": "What is the `Clone` trait?", "answer": "A standard library trait that allows for creating copies of values."}
+{"question": "Why can't the `Clone` trait be made into a trait object?", "answer": "Because the `clone` method returns `Self`, which is not object safe."}

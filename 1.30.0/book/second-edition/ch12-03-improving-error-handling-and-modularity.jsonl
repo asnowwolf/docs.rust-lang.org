@@ -1,0 +1,19 @@
+{"question": "What are the four problems with the current program's structure and error handling?", "answer": "The `main` function performs two tasks (parsing arguments and opening files), the configuration variables are not grouped, the error message for file opening is not specific, and error handling is scattered throughout the code."}
+{"question": "Why is it important to separate functionality into different functions?", "answer": "It makes the code easier to reason about, test, and change without breaking other parts."}
+{"question": "What is the recommended process for splitting the concerns of a binary program?", "answer": "Move the program's logic to *lib.rs*, keep command line parsing in *main.rs* initially, and move it to *lib.rs* when it becomes complex."}
+{"question": "What are the responsibilities that should remain in the `main` function after splitting the concerns?", "answer": "Calling command line parsing logic, setting up configuration, calling a `run` function in *lib.rs*, and handling errors from `run`."}
+{"question": "What is the purpose of the `parse_config` function?", "answer": "It parses the command line arguments and returns a `Config` struct containing the query and filename."}
+{"question": "Why is it better to use a struct instead of a tuple for configuration values?", "answer": "It makes the relationship between the values clear and provides meaningful names for the fields."}
+{"question": "What is the trade-off between using `clone` and storing references to the string data?", "answer": "Cloning is less efficient but simpler to manage, while references are more efficient but require lifetime management."}
+{"question": "What is the purpose of the `new` function associated with the `Config` struct?", "answer": "It acts as a constructor for creating instances of `Config`."}
+{"question": "What is the problem with using `panic!` to handle errors in the `new` function?", "answer": "It provides an error message intended for programmers, not end users, and it includes extraneous information."}
+{"question": "How does returning a `Result` from `new` improve error handling?", "answer": "It allows `main` to handle the error case and exit the process more cleanly."}
+{"question": "What is the purpose of the `unwrap_or_else` method?", "answer": "It allows custom error handling for `Result` values, returning the inner value if `Ok` or calling a closure if `Err`."}
+{"question": "What is the purpose of the `process::exit` function?", "answer": "It stops the program immediately and returns a specified exit status code."}
+{"question": "What is the purpose of the `run` function?", "answer": "It contains the program's logic, excluding configuration parsing and error handling."}
+{"question": "How does returning a `Result` from `run` improve error handling?", "answer": "It allows `main` to handle errors in a user-friendly way and consolidate error handling logic."}
+{"question": "What is a trait object?", "answer": "A trait object allows a function to return a type that implements a specific trait, without specifying the exact type."}
+{"question": "What is the purpose of the `?` operator?", "answer": "It returns the error value from a function if an error occurs, instead of panicking."}
+{"question": "What is the purpose of the `if let` statement?", "answer": "It checks whether a value matches a specific pattern and executes code if it does."}
+{"question": "What is the purpose of the `pub` keyword?", "answer": "It makes a function, struct, or field accessible from other crates."}
+{"question": "How do you bring a library crate into the scope of a binary crate?", "answer": "Use the `extern crate` keyword followed by the crate name."}

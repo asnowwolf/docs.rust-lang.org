@@ -1,0 +1,2 @@
+{"question": "What are some advanced features of Cargo?", "answer": "Cargo can customize builds through release profiles, publish libraries on crates.io, organize large projects with workspaces, install binaries from crates.io, and extend Cargo using custom commands."}
+{"question": "Where can I find more information about Cargo's features?", "answer": "The full documentation for Cargo is available at https://doc.rust-lang.org/cargo/."}

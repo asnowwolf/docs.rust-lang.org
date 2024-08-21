@@ -1,0 +1,6 @@
+{"question": "What is a module in Rust?", "answer": "A module is a namespace that contains definitions of functions or types, and you can choose whether those definitions are visible outside their module (public) or not (private)."}
+{"question": "How do you declare a new module in Rust?", "answer": "You use the `mod` keyword followed by the module name and curly brackets containing the code for the module."}
+{"question": "Where can the code for a module be placed?", "answer": "The code for a module can be placed immediately following the `mod` declaration within curly brackets or in a separate file."}
+{"question": "What is the default visibility of items within a module?", "answer": "By default, functions, types, constants, and modules are private."}
+{"question": "How do you make an item public within a module?", "answer": "You use the `pub` keyword before the item declaration."}
+{"question": "What is the purpose of the `use` keyword?", "answer": "The `use` keyword brings modules, or the definitions inside modules, into scope so it’s easier to refer to them."}

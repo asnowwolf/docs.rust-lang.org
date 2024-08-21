@@ -1,0 +1,7 @@
+{"question": "How can I extend Cargo with new subcommands?", "answer": "You can extend Cargo with new subcommands by creating a binary named `cargo-something` and placing it in your `$PATH`. This binary can then be run as a Cargo subcommand by running `cargo something`."}
+{"question": "How are custom Cargo commands listed?", "answer": "Custom commands are listed when you run `cargo --list`."}
+{"question": "How can I install custom Cargo commands?", "answer": "You can use `cargo install` to install custom Cargo commands."}
+{"question": "What is the benefit of Cargo's design in terms of custom commands?", "answer": "Cargo's design allows you to install and run custom commands just like the built-in Cargo tools, making it very convenient."}
+{"question": "What is the benefit of sharing code with Cargo and crates.io?", "answer": "Sharing code with Cargo and crates.io makes the Rust ecosystem useful for many different tasks."}
+{"question": "Why is Rust's standard library small and stable?", "answer": "Rust's standard library is small and stable because crates are easy to share, use, and improve on a timeline different from that of the language."}
+{"question": "Where can I share code that is useful to me?", "answer": "You can share code that is useful to you on crates.io."}

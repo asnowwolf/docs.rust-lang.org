@@ -1,0 +1,13 @@
+{"question": "Where are patterns used in Rust?", "answer": "Patterns are used in `match` arms, `if let` expressions, `while let` loops, `for` loops, `let` statements, and function parameters."}
+{"question": "What is the purpose of a `match` expression?", "answer": "A `match` expression takes a value and compares it to a series of patterns. If a pattern matches, the corresponding expression is executed."}
+{"question": "What is the requirement for `match` expressions?", "answer": "They must be exhaustive, meaning all possible values must be accounted for."}
+{"question": "What is the purpose of the `_` pattern in a `match` expression?", "answer": "It matches any value but doesn't bind to a variable. It's often used in the last arm to handle any remaining cases."}
+{"question": "What is the purpose of an `if let` expression?", "answer": "It provides a shorter way to write a `match` expression that only matches one case. It can also have an `else` block for cases where the pattern doesn't match."}
+{"question": "Can you mix `if let`, `else if`, and `else if let` expressions?", "answer": "Yes, you can mix them to create more complex conditional logic."}
+{"question": "What is the purpose of a `while let` loop?", "answer": "It allows a loop to run as long as a pattern continues to match."}
+{"question": "How can you use patterns in a `for` loop?", "answer": "You can use patterns to destructure values, such as tuples, as part of the loop iteration."}
+{"question": "How are patterns used in `let` statements?", "answer": "They are used to bind values to variables. A simple variable name is a pattern that binds the entire value to the variable."}
+{"question": "How can you use patterns to destructure a tuple in a `let` statement?", "answer": "You can use a tuple pattern with the same number of elements as the tuple to bind each element to a separate variable."}
+{"question": "What happens if the number of elements in a tuple pattern doesn't match the number of elements in the tuple?", "answer": "The compiler will issue a type error because the types won't match."}
+{"question": "Can you use patterns in function parameters?", "answer": "Yes, you can use patterns to destructure values passed as arguments to a function."}
+{"question": "Can you use patterns in closure parameter lists?", "answer": "Yes, you can use patterns in closure parameter lists in the same way as in function parameter lists."}

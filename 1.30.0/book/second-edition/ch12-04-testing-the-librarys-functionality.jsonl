@@ -1,0 +1,10 @@
+{"question": "What is the purpose of the `search` function in the `minigrep` program?", "answer": "The `search` function takes a query string and text as input and returns a vector of lines from the text that contain the query string."}
+{"question": "What are the steps involved in the Test-driven development (TDD) process?", "answer": "The TDD process involves writing a failing test, writing or modifying code to make the test pass, refactoring the code, and repeating these steps."}
+{"question": "What is the purpose of the `test` module in `src/lib.rs`?", "answer": "The `test` module contains test functions that specify the expected behavior of the `search` function."}
+{"question": "What is the purpose of the `#[cfg(test)]` attribute?", "answer": "The `#[cfg(test)]` attribute indicates that the code within the module should only be compiled when running tests."}
+{"question": "What is the purpose of the `assert_eq!` macro in the `one_result` test function?", "answer": "The `assert_eq!` macro asserts that the value returned by the `search` function is equal to the expected value."}
+{"question": "Why is the `search` function defined with a lifetime parameter `'a`?", "answer": "The lifetime parameter `'a` specifies that the returned vector contains string slices that reference slices of the `contents` argument, ensuring that the data referenced by the slices remains valid."}
+{"question": "What is the purpose of the `lines` method in the `search` function?", "answer": "The `lines` method iterates through each line of the `contents` string."}
+{"question": "What is the purpose of the `contains` method in the `search` function?", "answer": "The `contains` method checks whether the current line contains the query string."}
+{"question": "How are matching lines stored in the `search` function?", "answer": "Matching lines are stored in a mutable vector called `results` using the `push` method."}
+{"question": "How is the `search` function used in the `run` function?", "answer": "The `run` function calls the `search` function with the `config.query` value and the `contents` read from the file, and then prints each line returned by `search`."}

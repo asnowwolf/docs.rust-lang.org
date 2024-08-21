@@ -1,0 +1,7 @@
+{"question": "What did Edsger W. Dijkstra say about program testing in his 1972 essay \"The Humble Programmer\"?", "answer": "He said that program testing can be effective at showing the presence of bugs, but it is inadequate for showing their absence."}
+{"question": "What is correctness in the context of programming?", "answer": "Correctness refers to the extent to which code does what it is intended to do."}
+{"question": "How does Rust contribute to program correctness?", "answer": "Rust is designed with a high degree of concern for correctness, and its type system helps to ensure that code is correct. However, the type system cannot catch every kind of incorrectness."}
+{"question": "What is the purpose of automated software tests in Rust?", "answer": "Automated tests help to ensure that code behaves as intended, even after changes are made."}
+{"question": "What is an example of a test that could be written for a function called `add_two`?", "answer": "A test could assert that when `3` is passed to the `add_two` function, the returned value is `5`."}
+{"question": "What is the benefit of running tests whenever changes are made to code?", "answer": "Running tests helps to ensure that any existing correct behavior has not been changed."}
+{"question": "What aspects of Rust's testing facilities will be discussed in this chapter?", "answer": "The chapter will discuss annotations and macros for writing tests, the default behavior and options for running tests, and how to organize tests into unit tests and integration tests."}

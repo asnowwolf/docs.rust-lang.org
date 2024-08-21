@@ -1,0 +1,12 @@
+{"question": "What is the purpose of Appendix F in the Rust book?", "answer": "Appendix F documents features that have been added to stable Rust since the main part of the book was completed."}
+{"question": "What is field init shorthand?", "answer": "Field init shorthand allows you to initialize a data structure (struct, enum, union) with named fields by writing `fieldname` as a shorthand for `fieldname: fieldname`."}
+{"question": "How does field init shorthand reduce code duplication?", "answer": "It allows for a compact syntax for initialization, with less duplication."}
+{"question": "How can you return a value from a loop?", "answer": "You can add the result of an operation to the `break` expression used to stop the loop, and it will be returned by the broken loop."}
+{"question": "What is the purpose of nested groups in `use` declarations?", "answer": "Nested groups in `use` declarations allow you to group imports from different submodules in a complex module tree, keeping your code clean and avoiding repetition."}
+{"question": "What is the syntax for inclusive ranges in expressions and patterns?", "answer": "The syntax for inclusive ranges is `..=`."}
+{"question": "What is the difference between `..` and `...` in ranges?", "answer": "`..` is exclusive of the upper bound, while `...` is inclusive of the upper bound."}
+{"question": "What are the 128-bit integer primitives added in Rust 1.26.0?", "answer": "The 128-bit integer primitives are `u128` (unsigned) and `i128` (signed)."}
+{"question": "What is the range of `u128`?", "answer": "The range of `u128` is [0, 2^128 - 1]."}
+{"question": "What is the range of `i128`?", "answer": "The range of `i128` is [-(2^127), 2^127 - 1]."}
+{"question": "How are 128-bit integers implemented in Rust?", "answer": "They are implemented efficiently via LLVM support, even on platforms that don't natively support 128-bit integers."}
+{"question": "What are some potential uses for 128-bit integers?", "answer": "128-bit integers can be useful for algorithms that need to use very large integers efficiently, such as certain cryptographic algorithms."}

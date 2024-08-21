@@ -1,0 +1,15 @@
+{"question": "What is a struct in Rust?", "answer": "Structs are similar to tuples, but they allow you to name each piece of data, making them more flexible than tuples."}
+{"question": "How do you define a struct in Rust?", "answer": "You use the `struct` keyword followed by the struct name and curly brackets containing the names and types of the fields."}
+{"question": "What are the pieces of data within a struct called?", "answer": "They are called fields."}
+{"question": "How do you create an instance of a struct?", "answer": "You specify the struct name followed by curly brackets containing `key: value` pairs, where the keys are the field names and the values are the data you want to store."}
+{"question": "Can you specify the fields in a different order when creating an instance of a struct?", "answer": "Yes, the order doesn't matter."}
+{"question": "How do you access a specific value from a struct?", "answer": "You use dot notation, for example, `user1.email`."}
+{"question": "How do you change the value of a field in a struct?", "answer": "You use dot notation and assign a new value to the field, but the entire struct instance must be mutable."}
+{"question": "How can you implicitly return a new instance of a struct from a function?", "answer": "Make the new instance the last expression in the function body."}
+{"question": "What is the field init shorthand?", "answer": "It allows you to omit the colon and value when a struct field and a function parameter have the same name."}
+{"question": "How do you create a new struct instance using values from an existing instance?", "answer": "You use struct update syntax, which uses the `..` operator to specify that the remaining fields should have the same values as the given instance."}
+{"question": "What are tuple structs?", "answer": "They are structs that look like tuples, but they have a name and are a different type than other tuples."}
+{"question": "How do you define a tuple struct?", "answer": "You use the `struct` keyword followed by the struct name and the types of the fields in parentheses."}
+{"question": "What are unit-like structs?", "answer": "They are structs that don't have any fields and behave similarly to the unit type `()`."}
+{"question": "Why are unit-like structs useful?", "answer": "They can be useful when you need to implement a trait on a type but don't have any data to store."}
+{"question": "Why is it recommended to use owned types like `String` instead of references like `&str` in struct fields?", "answer": "It ensures that the data owned by the struct is valid for as long as the struct is valid, avoiding lifetime issues."}

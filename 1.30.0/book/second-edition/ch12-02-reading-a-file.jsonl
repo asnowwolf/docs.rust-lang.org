@@ -1,0 +1,10 @@
+{"question": "What is the purpose of the `poem.txt` file?", "answer": "It is a sample file used to test the `minigrep` program, containing a small amount of text over multiple lines with some repeated words."}
+{"question": "What is the content of the `poem.txt` file?", "answer": "It contains the poem \"I'm Nobody! Who are you?\" by Emily Dickinson."}
+{"question": "What is the purpose of the `use` statements in Listing 12-4?", "answer": "They bring in relevant parts of the standard library, including `std::fs::File` for handling files and `std::io::prelude::*` for I/O operations."}
+{"question": "What is the purpose of the `std::io::prelude::*` module?", "answer": "It contains various useful traits for doing I/O, including file I/O."}
+{"question": "What is the purpose of the `File::open` function?", "answer": "It gets a mutable handle to the file specified by the `filename` variable."}
+{"question": "What is the purpose of the `contents` variable?", "answer": "It is a mutable, empty `String` that will hold the content of the file after it is read."}
+{"question": "What is the purpose of the `read_to_string` function?", "answer": "It reads the content of the file into the `contents` variable."}
+{"question": "What is the purpose of the `println!` statement after the `read_to_string` call?", "answer": "It prints the value of `contents` after the file is read, allowing you to check if the program is working correctly."}
+{"question": "What are the flaws in the code in Listing 12-4?", "answer": "The `main` function has multiple responsibilities, and errors are not handled as well as they could be."}
+{"question": "Why is it important to refactor code early on?", "answer": "It is easier to refactor smaller amounts of code, and it makes the program clearer and easier to maintain as it grows."}

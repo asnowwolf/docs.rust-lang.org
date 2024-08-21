@@ -1,0 +1,6 @@
+{"question": "What is the final project in this book?", "answer": "Building a multithreaded web server that says \"hello\"."}
+{"question": "What is the goal of the final project?", "answer": "To demonstrate concepts covered in the final chapters and recap earlier lessons."}
+{"question": "What does the web server created in the final project look like in a web browser?", "answer": "It displays \"hello\" as shown in Figure 20-1."}
+{"question": "What are the steps involved in building the web server?", "answer": "1. Learn about TCP and HTTP. 2. Listen for TCP connections on a socket. 3. Parse HTTP requests. 4. Create an HTTP response. 5. Improve throughput with a thread pool."}
+{"question": "Why is the method used in this chapter not the best way to build a web server with Rust?", "answer": "There are production-ready crates available on crates.io that provide more complete web server and thread pool implementations."}
+{"question": "What is the purpose of building the web server manually in this chapter?", "answer": "To help the reader learn the general ideas and techniques behind the crates they might use in the future."}

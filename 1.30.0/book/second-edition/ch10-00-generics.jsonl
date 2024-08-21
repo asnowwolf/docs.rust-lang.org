@@ -1,0 +1,8 @@
+{"question": "What is the purpose of generics in Rust?", "answer": "Generics are abstract stand-ins for concrete types or other properties, allowing for code reuse and reducing duplication."}
+{"question": "What is an example of a generic type we have already used in previous chapters?", "answer": "Examples include `Option<T>`, `Vec<T>`, `HashMap<K, V>`, and `Result<T, E>`. "}
+{"question": "What is the first step in removing code duplication?", "answer": "Identify duplicate code."}
+{"question": "What is the second step in removing code duplication?", "answer": "Extract the duplicate code into the body of a function and specify the inputs and return values in the function signature."}
+{"question": "What is the third step in removing code duplication?", "answer": "Update the instances of duplicated code to call the function instead."}
+{"question": "What is the purpose of the `largest` function in Listing 10-3?", "answer": "The `largest` function finds the largest number in a slice of `i32` values."}
+{"question": "What is the parameter of the `largest` function?", "answer": "The parameter is `list`, which represents any concrete slice of `i32` values."}
+{"question": "What is the return value of the `largest` function?", "answer": "The return value is an `i32` representing the largest number in the slice."}

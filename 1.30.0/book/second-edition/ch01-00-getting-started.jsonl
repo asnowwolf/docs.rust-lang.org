@@ -1,0 +1,4 @@
+{"question": "What is the first step in learning Rust?", "answer": "Install Rust on your operating system."}
+{"question": "What operating systems are supported by Rust?", "answer": "Rust is supported on Linux, macOS, and Windows."}
+{"question": "What is the first program you will write in Rust?", "answer": "A program that prints \"Hello, world!\""}
+{"question": "What is `cargo`?", "answer": "Rust's package manager and build system."}

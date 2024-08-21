@@ -1,0 +1,13 @@
+{"question": "How do I create a new Rust project called `minigrep`?", "answer": "Use `cargo new --bin minigrep`."}
+{"question": "What is the purpose of the `minigrep` project?", "answer": "It is designed to accept two command line arguments: a filename and a string to search for."}
+{"question": "How do I run the `minigrep` program with the search string `searchstring` and the file `example-filename.txt`?", "answer": "Use `cargo run searchstring example-filename.txt`."}
+{"question": "What Rust function can be used to read command line arguments?", "answer": "The `std::env::args` function returns an iterator of the command line arguments."}
+{"question": "What does the `collect` method do on an iterator?", "answer": "It turns the iterator into a collection, such as a vector, containing all the elements the iterator produces."}
+{"question": "How do I bring the `std::env` module into scope?", "answer": "Use the `use std::env;` statement."}
+{"question": "Why is it conventional to bring the parent module into scope rather than the function itself?", "answer": "It allows easy access to other functions from the parent module and avoids ambiguity when calling the function."}
+{"question": "What happens if any argument contains invalid Unicode when using `std::env::args`?", "answer": "The program will panic."}
+{"question": "What function should be used if the program needs to accept arguments containing invalid Unicode?", "answer": "Use `std::env::args_os` instead, which returns an iterator that produces `OsString` values."}
+{"question": "Why is `std::env::args` used in this example instead of `std::env::args_os`?", "answer": "For simplicity, as `OsString` values are platform-specific and more complex to work with than `String` values."}
+{"question": "What is the first value in the vector returned by `env::args`?", "answer": "The name of the binary, such as `target/debug/minigrep`."}
+{"question": "How do I save the values of the two command line arguments in variables?", "answer": "Use `let query = &args[1];` and `let filename = &args[2];` to store references to the first and second arguments, respectively."}
+{"question": "What is the purpose of the `&` symbol in the variable assignments?", "answer": "It creates a reference to the argument values, allowing access to the data without copying it."}

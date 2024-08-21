@@ -1,0 +1,8 @@
+{"question": "What are the three advanced features of lifetimes discussed in this chapter?", "answer": "The three advanced features of lifetimes discussed in this chapter are lifetime subtyping, lifetime bounds, and inference of trait object lifetimes."}
+{"question": "What is lifetime subtyping?", "answer": "Lifetime subtyping specifies that one lifetime should outlive another lifetime."}
+{"question": "What is the purpose of lifetime bounds?", "answer": "Lifetime bounds help Rust verify that references in generic types won't outlive the data they're referencing."}
+{"question": "What is the default lifetime of a trait object?", "answer": "The default lifetime of a trait object is `'static`."}
+{"question": "What is the default lifetime of a trait object with `&'a Trait` or `&'a mut Trait`?", "answer": "The default lifetime of a trait object with `&'a Trait` or `&'a mut Trait` is `'a`."}
+{"question": "What is the default lifetime of a trait object with a single `T: 'a` clause?", "answer": "The default lifetime of a trait object with a single `T: 'a` clause is `'a`."}
+{"question": "What is the default lifetime of a trait object with multiple clauses like `T: 'a`?", "answer": "With multiple clauses like `T: 'a`, there is no default lifetime; we must be explicit."}
+{"question": "How can we specify a lifetime bound on a trait object?", "answer": "We can add a lifetime bound on a trait object like `Box<Red>` using the syntax `Box<Red + 'static>` or `Box<Red + 'a>`, depending on whether the reference lives for the entire program or not."}

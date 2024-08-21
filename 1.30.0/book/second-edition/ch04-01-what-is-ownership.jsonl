@@ -1,0 +1,31 @@
+{"question": "What is the central feature of Rust?", "answer": "Rust's central feature is ownership."}
+{"question": "What are the three approaches to memory management in programming languages?", "answer": "The three approaches are garbage collection, explicit allocation and freeing, and ownership."}
+{"question": "How does Rust manage memory?", "answer": "Rust uses a system of ownership with a set of rules that the compiler checks at compile time."}
+{"question": "What is the benefit of Rust's ownership system?", "answer": "It ensures memory safety without slowing down the program at runtime."}
+{"question": "What are the stack and the heap?", "answer": "The stack and the heap are parts of memory available to your code at runtime, but they are structured differently."}
+{"question": "How does the stack store values?", "answer": "The stack stores values in the order it gets them and removes them in the opposite order, following a last-in, first-out principle."}
+{"question": "What are the advantages of the stack?", "answer": "The stack is fast because it never has to search for a place to put or get data, and all data on the stack must have a known, fixed size."}
+{"question": "Where is data with an unknown or changing size stored?", "answer": "Data with an unknown or changing size is stored on the heap."}
+{"question": "How does the heap store data?", "answer": "When you put data on the heap, you request space, and the operating system finds an empty spot, marks it as in use, and returns a pointer to that location."}
+{"question": "What is the process of putting data on the heap called?", "answer": "The process of putting data on the heap is called allocating on the heap, sometimes abbreviated as just allocating."}
+{"question": "How is data accessed on the heap?", "answer": "Data on the heap is accessed by following a pointer."}
+{"question": "Why is accessing data on the heap slower than accessing data on the stack?", "answer": "Accessing data on the heap is slower because you have to follow a pointer, which requires the processor to jump around in memory."}
+{"question": "What happens when a function is called?", "answer": "When a function is called, the values passed into the function and the function's local variables are pushed onto the stack."}
+{"question": "What happens when a function ends?", "answer": "When a function ends, the values pushed onto the stack are popped off."}
+{"question": "What are the problems that ownership addresses?", "answer": "Ownership addresses the problems of keeping track of what parts of code are using what data on the heap, minimizing duplicate data on the heap, and cleaning up unused data on the heap."}
+{"question": "What are the three ownership rules?", "answer": "The three ownership rules are: each value has an owner, there can only be one owner at a time, and when the owner goes out of scope, the value is dropped."}
+{"question": "What is a scope?", "answer": "A scope is the range within a program for which an item is valid."}
+{"question": "What happens to a variable when it goes out of scope?", "answer": "When a variable goes out of scope, Rust calls a special function called `drop` to clean up the heap memory for that variable."}
+{"question": "What is the `String` type?", "answer": "The `String` type is a mutable, growable piece of text allocated on the heap."}
+{"question": "How can you create a `String` from a string literal?", "answer": "You can create a `String` from a string literal using the `from` function: `let s = String::from(\"hello\");`."}
+{"question": "Why can `String` be mutated but string literals cannot?", "answer": "String literals are immutable because they are hardcoded into the executable, while `String` is allocated on the heap and can be resized."}
+{"question": "What are the two parts of memory management for `String`?", "answer": "The two parts are requesting memory from the operating system at runtime and returning the memory to the operating system when done."}
+{"question": "How is memory returned to the operating system in Rust?", "answer": "Memory is automatically returned to the operating system when the variable that owns it goes out of scope."}
+{"question": "What is a double free error?", "answer": "A double free error occurs when two variables try to free the same memory, which can lead to memory corruption and security vulnerabilities."}
+{"question": "What is a move?", "answer": "A move is when a variable is invalidated after its data is transferred to another variable."}
+{"question": "How can you deeply copy the heap data of a `String`?", "answer": "You can deeply copy the heap data of a `String` using the `clone` method."}
+{"question": "What is the `Copy` trait?", "answer": "The `Copy` trait is an annotation that can be placed on types that are stored entirely on the stack and can be copied quickly."}
+{"question": "What types are `Copy`?", "answer": "Types that are `Copy` include integers, booleans, floating point numbers, characters, and tuples containing only `Copy` types."}
+{"question": "What happens when a variable is passed to a function?", "answer": "Passing a variable to a function will move or copy it, just as assignment does."}
+{"question": "How can you return ownership of a value from a function?", "answer": "Returning a value from a function can transfer ownership."}
+{"question": "What is a reference?", "answer": "A reference allows a function to use a value without taking ownership."}

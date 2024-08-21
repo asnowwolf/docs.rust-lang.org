@@ -1,0 +1,7 @@
+{"question": "What are collections in Rust?", "answer": "Collections are data structures in Rust's standard library that can hold multiple values."}
+{"question": "What are the differences between collections and built-in data types like arrays and tuples?", "answer": "Collections store data on the heap, allowing the amount of data to grow or shrink at runtime, unlike arrays and tuples which have fixed sizes known at compile time."}
+{"question": "What are the three most common collections in Rust?", "answer": "The three most common collections are vectors, strings, and hash maps."}
+{"question": "What is a vector?", "answer": "A vector is a collection that stores a variable number of values next to each other."}
+{"question": "What is a string?", "answer": "A string is a collection of characters."}
+{"question": "What is a hash map?", "answer": "A hash map allows you to associate a value with a particular key, and is an implementation of the more general data structure called a map."}
+{"question": "Where can I find documentation on other collections provided by the standard library?", "answer": "You can find documentation on other collections at https://doc.rust-lang.org/1.30.0/std/collections/index.html."}

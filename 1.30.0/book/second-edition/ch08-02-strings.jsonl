@@ -1,0 +1,13 @@
+{"question": "What are the three reasons why new Rust programmers often struggle with strings?", "answer": "Rust's propensity for exposing possible errors, strings being a more complicated data structure than many programmers give them credit for, and UTF-8."}
+{"question": "How is the `String` type implemented in Rust?", "answer": "It is implemented as a collection of bytes, plus some methods to provide useful functionality when those bytes are interpreted as text."}
+{"question": "What is the difference between `String` and `str`?", "answer": "The `String` type is a growable, mutable, owned, UTF-8 encoded string type, while the `str` type is a string slice, which is a reference to some UTF-8 encoded string data stored elsewhere."}
+{"question": "What are some other string types provided by Rust's standard library?", "answer": "Rust's standard library includes `OsString`, `OsStr`, `CString`, and `CStr`."}
+{"question": "How do you create a new, empty `String`?", "answer": "Use the `String::new()` function."}
+{"question": "How do you create a `String` from a string literal?", "answer": "Use the `to_string` method or the `String::from` function."}
+{"question": "How do you append a string slice to a `String`?", "answer": "Use the `push_str` method."}
+{"question": "How do you add a single character to a `String`?", "answer": "Use the `push` method."}
+{"question": "How do you concatenate two `String` values?", "answer": "Use the `+` operator or the `format!` macro."}
+{"question": "Why doesn't Rust allow indexing into a `String`?", "answer": "Because Rust strings don't support indexing. Indexing operations are expected to always take constant time (O(1)), but it isn't possible to guarantee that performance with a `String`."}
+{"question": "What are the three relevant ways to look at strings from Rust's perspective?", "answer": "As bytes, scalar values, and grapheme clusters."}
+{"question": "How do you create a string slice containing particular bytes from a `String`?", "answer": "Use `[]` with a range."}
+{"question": "What are the methods for iterating over strings?", "answer": "The `chars` method returns each Unicode scalar value, and the `bytes` method returns each raw byte."}

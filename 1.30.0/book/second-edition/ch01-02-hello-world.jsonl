@@ -1,0 +1,18 @@
+{"question": "What is the traditional first program to write when learning a new language?", "answer": "A program that prints \"Hello, world!\" to the screen."}
+{"question": "What is the recommended directory structure for Rust projects?", "answer": "Create a *projects* directory in your home directory and keep all your projects there."}
+{"question": "How do I create a directory for a Rust project on Linux and macOS?", "answer": "Use the following commands in your terminal: \n\n```text\n$ mkdir ~/projects\n$ cd ~/projects\n$ mkdir hello_world\n$ cd hello_world\n```"}
+{"question": "How do I create a directory for a Rust project on Windows using CMD?", "answer": "Use the following commands in your terminal: \n\n```cmd\n> mkdir \"%USERPROFILE%\\projects\"\n> cd /d \"%USERPROFILE%\\projects\"\n> mkdir hello_world\n> cd hello_world\n```"}
+{"question": "How do I create a directory for a Rust project on Windows using PowerShell?", "answer": "Use the following commands in your terminal: \n\n```powershell\n> mkdir $env:USERPROFILE\\projects\n> cd $env:USERPROFILE\\projects\n> mkdir hello_world\n> cd hello_world\n```"}
+{"question": "What is the file extension for Rust source files?", "answer": "*.rs*"}
+{"question": "What is the recommended naming convention for Rust files with multiple words?", "answer": "Use an underscore to separate the words. For example, use *hello_world.rs* rather than *helloworld.rs*."}
+{"question": "What is the code for a simple \"Hello, world!\" program in Rust?", "answer": "```rust\nfn main() {\n    println!(\"Hello, world!\");\n}\n```"}
+{"question": "How do I compile and run a Rust program on Linux or macOS?", "answer": "Use the following commands in your terminal: \n\n```text\n$ rustc main.rs\n$ ./main\n```"}
+{"question": "How do I compile and run a Rust program on Windows?", "answer": "Use the following commands in your terminal: \n\n```powershell\n> rustc main.rs\n> .\\main.exe\n```"}
+{"question": "What is the purpose of the `main` function in Rust?", "answer": "It is the first code that runs in every executable Rust program."}
+{"question": "What does the `println!` macro do in Rust?", "answer": "It prints text to the screen."}
+{"question": "What is the purpose of the semicolon (`;`) at the end of most lines of Rust code?", "answer": "It indicates the end of an expression."}
+{"question": "What is the command to compile a Rust program?", "answer": "Use the `rustc` command followed by the name of the source file, for example: `rustc main.rs`."}
+{"question": "What is the command to run a compiled Rust program on Linux, macOS, and PowerShell on Windows?", "answer": "Use the `./` prefix followed by the name of the executable file, for example: `./main`."}
+{"question": "What is the command to run a compiled Rust program on Windows using CMD?", "answer": "Use the `.\\` prefix followed by the name of the executable file, for example: `.\\main.exe`."}
+{"question": "What is the difference between compiling and running a Rust program?", "answer": "Compiling translates the Rust code into an executable file, while running executes the compiled program."}
+{"question": "What is the purpose of the Cargo tool?", "answer": "It helps manage Rust projects, including compiling, running, and sharing code."}

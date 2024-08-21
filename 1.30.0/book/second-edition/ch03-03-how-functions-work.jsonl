@@ -1,0 +1,13 @@
+{"question": "What is the conventional style for function and variable names in Rust?", "answer": "Rust code uses snake case, where all letters are lowercase and underscores separate words."}
+{"question": "How do you define a function in Rust?", "answer": "Function definitions start with `fn` and have a set of parentheses after the function name. The curly brackets tell the compiler where the function body begins and ends."}
+{"question": "How do you call a function in Rust?", "answer": "You call a function by entering its name followed by a set of parentheses."}
+{"question": "What is the entry point of many Rust programs?", "answer": "The `main` function is the entry point of many Rust programs."}
+{"question": "What are function parameters?", "answer": "Function parameters are special variables that are part of a function's signature. They allow you to provide concrete values to the function when you call it."}
+{"question": "What is the difference between a parameter and an argument?", "answer": "Parameters are the variables in a function's definition, while arguments are the concrete values passed in when you call the function."}
+{"question": "How do you declare the type of a function parameter?", "answer": "You must declare the type of each parameter in the function signature, separated by commas."}
+{"question": "What are statements in Rust?", "answer": "Statements are instructions that perform some action and do not return a value."}
+{"question": "What are expressions in Rust?", "answer": "Expressions evaluate to a resulting value."}
+{"question": "What is the difference between a statement and an expression?", "answer": "Statements perform actions and don't return values, while expressions evaluate to a value."}
+{"question": "How do you return a value from a function in Rust?", "answer": "The return value of a function is the value of the final expression in the function's body. You can also use the `return` keyword to return a value early."}
+{"question": "How do you declare the return type of a function?", "answer": "You declare the return type of a function after an arrow (`->`) in the function signature."}
+{"question": "What happens if you add a semicolon to the end of an expression in a function body?", "answer": "Adding a semicolon to the end of an expression turns it into a statement, which does not return a value."}

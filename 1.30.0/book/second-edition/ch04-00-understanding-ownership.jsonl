@@ -1,0 +1,3 @@
+{"question": "What is ownership in Rust?", "answer": "Ownership is a unique feature of Rust that enables memory safety guarantees without needing a garbage collector."}
+{"question": "Why is understanding ownership important in Rust?", "answer": "It's important to understand how ownership works in Rust because it's a fundamental feature that enables memory safety."}
+{"question": "What are some related features to ownership in Rust?", "answer": "Related features to ownership include borrowing, slices, and how Rust lays data out in memory."}

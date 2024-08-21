@@ -1,0 +1,24 @@
+{"question": "How do I install Rust?", "answer": "Install Rust using `rustup`, a command line tool for managing Rust versions and associated tools."}
+{"question": "What is `rustup`?", "answer": "`rustup` is a command line tool for managing Rust versions and associated tools."}
+{"question": "What is the latest stable version of Rust?", "answer": "The latest stable version of Rust is 1.21.0."}
+{"question": "What is the purpose of Rust's stability guarantees?", "answer": "Rust's stability guarantees ensure that all the examples in the book that compile will continue to compile with newer Rust versions."}
+{"question": "How do I install `rustup` on Linux or macOS?", "answer": "Open a terminal and enter the following command: `curl https://sh.rustup.rs -sSf | sh`."}
+{"question": "What happens after running the `rustup` installation script on Linux or macOS?", "answer": "The script downloads and starts the installation of the `rustup` tool, which installs the latest stable version of Rust. You might be prompted for your password. If the install is successful, the following line will appear: `Rust is installed now. Great!`."}
+{"question": "How do I manually add Rust to my system PATH on Linux or macOS?", "answer": "Run the following command in your shell: `source $HOME/.cargo/env`."}
+{"question": "How do I add Rust to my system PATH on Linux or macOS by modifying my *~/.bash_profile*?", "answer": "Add the following line to your *~/.bash_profile*: `export PATH=\"$HOME/.cargo/bin:$PATH\"`."}
+{"question": "What is a linker and why is it needed?", "answer": "A linker is a program that combines object files and libraries to create an executable file. It's likely one is already installed, but if you get errors indicating that a linker could not execute, you'll need to install one manually."}
+{"question": "How do I install a linker?", "answer": "C compilers usually come with the correct linker. Check your platform's documentation for how to install a C compiler."}
+{"question": "Why might I need a C compiler?", "answer": "Some common Rust packages depend on C code and will need a C compiler."}
+{"question": "How do I install Rust on Windows?", "answer": "Go to https://www.rust-lang.org/install.html and follow the instructions."}
+{"question": "What is required to install Rust on Windows besides the Rust installer?", "answer": "You will also need the C++ build tools for Visual Studio 2013 or later."}
+{"question": "What is the easiest way to acquire the C++ build tools for Visual Studio?", "answer": "Install Build Tools for Visual Studio 2017 from https://www.visualstudio.com/downloads/."}
+{"question": "Where can I find the Build Tools for Visual Studio 2017?", "answer": "They are in the Other Tools and Frameworks section."}
+{"question": "What command line interfaces are supported by the commands in this book?", "answer": "The commands work in both *cmd.exe* and PowerShell."}
+{"question": "How do I update Rust?", "answer": "Run the following update script from your shell: `rustup update`."}
+{"question": "How do I uninstall Rust and `rustup`?", "answer": "Run the following uninstall script from your shell: `rustup self uninstall`."}
+{"question": "How do I check if Rust is installed correctly?", "answer": "Open a shell and enter the following line: `rustc --version`."}
+{"question": "What should I see if Rust is installed correctly?", "answer": "You should see the version number, commit hash, and commit date for the latest stable version that has been released in the following format: `rustc x.y.z (abcabcabc yyyy-mm-dd)`."}
+{"question": "What should I do if Rust is not working on Windows?", "answer": "Check that Rust is in your `%PATH%` system variable."}
+{"question": "Where can I get help if I'm having trouble installing Rust?", "answer": "The easiest is the #rust IRC channel on irc.mozilla.org, which you can access through Mibbit. Other great resources include the Users forum and Stack Overflow."}
+{"question": "How do I access the local documentation for Rust?", "answer": "Run `rustup doc` to open the local documentation in your browser."}
+{"question": "What is the API documentation and how can I use it?", "answer": "The API documentation provides information about types and functions provided by the standard library. You can use it to find out what a type or function does or how to use it."}

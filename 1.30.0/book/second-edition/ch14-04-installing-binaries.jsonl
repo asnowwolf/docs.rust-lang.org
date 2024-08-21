@@ -1,0 +1,13 @@
+{"question": "What is the purpose of the `cargo install` command?", "answer": "The `cargo install` command allows you to install and use binary crates locally."}
+{"question": "What is the intended use of `cargo install`?", "answer": "It is meant to be a convenient way for Rust developers to install tools that others have shared on crates.io."}
+{"question": "What kind of crates can be installed with `cargo install`?", "answer": "Only packages that have binary targets can be installed."}
+{"question": "What is a binary target?", "answer": "A binary target is the runnable program that is created if the crate has a src/main.rs file or another file specified as a binary."}
+{"question": "What is a library target?", "answer": "A library target is not runnable on its own but is suitable for including within other programs."}
+{"question": "Where can I find information about whether a crate is a library, has a binary target, or both?", "answer": "Usually, crates have information in the README file about whether a crate is a library, has a binary target, or both."}
+{"question": "Where are binaries installed with `cargo install` stored?", "answer": "All binaries installed with `cargo install` are stored in the installation root’s bin folder."}
+{"question": "What is the default location of the installation root’s bin folder if Rust was installed using rustup and there are no custom configurations?", "answer": "The default location is $HOME/.cargo/bin."}
+{"question": "How do I ensure that I can run programs installed with `cargo install`?", "answer": "Ensure that the installation directory is in your $PATH."}
+{"question": "What is an example of a Rust implementation of the `grep` tool?", "answer": "There is a Rust implementation of the `grep` tool called `ripgrep` for searching files."}
+{"question": "How do I install `ripgrep`?", "answer": "You can install `ripgrep` by running the command `cargo install ripgrep`."}
+{"question": "What is the name of the installed binary for `ripgrep`?", "answer": "The installed binary for `ripgrep` is `rg`."}
+{"question": "How do I use `ripgrep` after installing it?", "answer": "You can run `rg --help` to start using `ripgrep` for searching files."}

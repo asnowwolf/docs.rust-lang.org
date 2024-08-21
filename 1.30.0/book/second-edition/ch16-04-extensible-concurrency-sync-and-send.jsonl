@@ -1,0 +1,16 @@
+{"question": "What are the two concurrency concepts embedded in the Rust language?", "answer": "The `std::marker` traits `Sync` and `Send`."}
+{"question": "What does the `Send` marker trait indicate?", "answer": "The `Send` marker trait indicates that ownership of the type implementing `Send` can be transferred between threads."}
+{"question": "Why is `Rc<T>` not `Send`?", "answer": "If you cloned an `Rc<T>` value and tried to transfer ownership of the clone to another thread, both threads might update the reference count at the same time."}
+{"question": "What is the purpose of the `Sync` marker trait?", "answer": "The `Sync` marker trait indicates that it is safe for the type implementing `Sync` to be referenced from multiple threads."}
+{"question": "What does it mean for a type `T` to be `Sync`?", "answer": "A type `T` is `Sync` if `&T` (a reference to `T`) is `Send`, meaning the reference can be sent safely to another thread."}
+{"question": "Why is `Rc<T>` not `Sync`?", "answer": "For the same reasons that it’s not `Send`."}
+{"question": "Why are `RefCell<T>` and the family of related `Cell<T>` types not `Sync`?", "answer": "The implementation of borrow checking that `RefCell<T>` does at runtime is not thread-safe."}
+{"question": "Is `Mutex<T>` `Sync`?", "answer": "Yes, `Mutex<T>` is `Sync` and can be used to share access with multiple threads."}
+{"question": "Why don't we have to implement `Send` and `Sync` manually?", "answer": "Because types that are made up of `Send` and `Sync` traits are automatically also `Send` and `Sync`."}
+{"question": "What is involved in manually implementing `Send` and `Sync`?", "answer": "Manually implementing these traits involves implementing unsafe Rust code."}
+{"question": "What is the purpose of the `Send` and `Sync` traits?", "answer": "They are useful for enforcing invariants related to concurrency."}
+{"question": "Where can I find more information about the safety guarantees of `Send` and `Sync`?", "answer": "The Rustonomicon has more information about these guarantees and how to uphold them."}
+{"question": "What is the main takeaway from this chapter?", "answer": "Rust provides safe and efficient concurrency features through the standard library and the `Send` and `Sync` traits."}
+{"question": "What are some examples of concurrency solutions implemented as crates?", "answer": "Many concurrency solutions are implemented as crates, which evolve more quickly than the standard library."}
+{"question": "What are some of the concurrency features provided by the Rust standard library?", "answer": "The Rust standard library provides channels for message passing and smart pointer types, such as `Mutex<T>` and `Arc<T>`, that are safe to use in concurrent contexts."}
+{"question": "What is the benefit of using the Rust standard library's concurrency features?", "answer": "The type system and the borrow checker ensure that the code using these solutions won’t end up with data races or invalid references."}

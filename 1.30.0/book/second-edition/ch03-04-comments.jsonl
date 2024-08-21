@@ -1,0 +1,6 @@
+{"question": "What is the purpose of comments in code?", "answer": "Comments are notes left in source code that the compiler ignores but humans reading the code may find useful."}
+{"question": "How do you start a comment in Rust?", "answer": "Comments in Rust start with two slashes (`//`) and continue until the end of the line."}
+{"question": "How do you write multi-line comments in Rust?", "answer": "For multi-line comments, you need to include `//` on each line."}
+{"question": "Can comments be placed at the end of lines containing code?", "answer": "Yes, comments can be placed at the end of lines containing code."}
+{"question": "What is the more common format for placing comments in Rust?", "answer": "Comments are more often placed on a separate line above the code they are annotating."}
+{"question": "What is another type of comment in Rust?", "answer": "Rust also has documentation comments, which will be discussed in Chapter 14."}

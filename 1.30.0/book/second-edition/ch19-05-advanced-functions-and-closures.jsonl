@@ -1,0 +1,10 @@
+{"question": "What are some advanced features related to functions and closures?", "answer": "Advanced features related to functions and closures include function pointers and returning closures."}
+{"question": "How can you pass a regular function to another function?", "answer": "You can use function pointers, which are represented by the `fn` type."}
+{"question": "What is the syntax for specifying a function pointer as a parameter?", "answer": "The syntax is similar to that of closures, for example: `fn do_twice(f: fn(i32) -> i32, arg: i32) -> i32 { ... }`."}
+{"question": "What is the difference between `fn` and the `Fn` closure trait?", "answer": "`fn` is a type, while `Fn` is a trait. You specify `fn` directly as the parameter type, while you use a generic type parameter with a `Fn` trait bound for closures."}
+{"question": "Do function pointers implement the closure traits?", "answer": "Yes, function pointers implement all three closure traits: `Fn`, `FnMut`, and `FnOnce`."}
+{"question": "Why is it best to write functions using a generic type and a closure trait?", "answer": "This allows your functions to accept both functions and closures."}
+{"question": "When would you want to only accept `fn` and not closures?", "answer": "When interfacing with external code that doesn't have closures, such as C functions."}
+{"question": "How can you use `map` to turn a vector of numbers into a vector of strings?", "answer": "You can use a closure or a named function as the argument to `map`."}
+{"question": "Why can't you return closures directly?", "answer": "Closures are represented by traits, and you can't return traits directly."}
+{"question": "How can you return a closure from a function?", "answer": "You can use a trait object, such as `Box<Fn(i32) -> i32>`."}

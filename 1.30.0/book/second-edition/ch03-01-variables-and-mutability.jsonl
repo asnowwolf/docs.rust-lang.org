@@ -1,0 +1,9 @@
+{"question": "What is the default mutability of variables in Rust?", "answer": "Variables in Rust are immutable by default."}
+{"question": "What is the benefit of using immutable variables in Rust?", "answer": "Immutable variables promote code safety and easy concurrency."}
+{"question": "How can you make a variable mutable in Rust?", "answer": "You can make a variable mutable by adding the `mut` keyword in front of the variable name."}
+{"question": "What is the purpose of the `mut` keyword?", "answer": "The `mut` keyword indicates that the variable's value can be changed and conveys intent to future readers of the code."}
+{"question": "What is the difference between variables and constants in Rust?", "answer": "Constants are always immutable, declared using the `const` keyword, require type annotations, and can only be set to constant expressions."}
+{"question": "What is the naming convention for constants in Rust?", "answer": "Constants are named using all uppercase letters with underscores between words."}
+{"question": "What is shadowing in Rust?", "answer": "Shadowing allows you to declare a new variable with the same name as a previous variable, effectively hiding the previous variable's value."}
+{"question": "How do you shadow a variable in Rust?", "answer": "You can shadow a variable by using the same variable name and repeating the use of the `let` keyword."}
+{"question": "What is the difference between shadowing and using `mut`?", "answer": "Shadowing creates a new variable with the same name, while `mut` modifies the existing variable. Shadowing allows you to change the type of the variable, while `mut` does not."}

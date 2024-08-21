@@ -1,0 +1,13 @@
+{"question": "What is one of Rust's major goals?", "answer": "Handling concurrent programming safely and efficiently."}
+{"question": "What are the two types of programming that are becoming increasingly important?", "answer": "Concurrent programming and parallel programming."}
+{"question": "What is concurrent programming?", "answer": "Different parts of a program execute independently."}
+{"question": "What is parallel programming?", "answer": "Different parts of a program execute at the same time."}
+{"question": "What is Rust's approach to concurrency?", "answer": "Rust aims to make concurrent programming easier and less error-prone."}
+{"question": "How does Rust help prevent concurrency errors?", "answer": "Rust leverages ownership and type checking to make many concurrency errors compile-time errors instead of runtime errors."}
+{"question": "What is the benefit of having concurrency errors as compile-time errors?", "answer": "It allows you to fix errors while working on the code instead of potentially after it has been shipped to production."}
+{"question": "What is Rust's approach to concurrency nicknamed?", "answer": "Fearless concurrency."}
+{"question": "What are the benefits of fearless concurrency?", "answer": "It allows you to write code that is free of subtle bugs and is easy to refactor without introducing new bugs."}
+{"question": "What is the difference between concurrent and parallel programming?", "answer": "For simplicity, the book refers to both as concurrent. However, concurrent programming involves independent execution, while parallel programming involves simultaneous execution."}
+{"question": "What is a common approach to handling concurrent problems in other languages?", "answer": "Many languages are dogmatic about their solutions, like Erlang's focus on message-passing concurrency."}
+{"question": "Why does Rust offer a variety of tools for concurrency?", "answer": "Rust aims to provide the best performance for any given situation and has fewer abstractions over the hardware."}
+{"question": "What are the topics covered in this chapter?", "answer": "Creating threads, message-passing concurrency, shared-state concurrency, and the `Sync` and `Send` traits."}

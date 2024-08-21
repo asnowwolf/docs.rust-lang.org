@@ -1,0 +1,17 @@
+{"question": "What are the two types of output that most terminals provide?", "answer": "Most terminals provide standard output (`stdout`) for general information and standard error (`stderr`) for error messages."}
+{"question": "What is the purpose of standard error?", "answer": "Standard error (`stderr`) is used for error messages, allowing users to direct successful output to a file while still seeing error messages on the screen."}
+{"question": "Why can't the `println!` function be used to print to standard error?", "answer": "The `println!` function only prints to standard output."}
+{"question": "How can we redirect the standard output stream to a file?", "answer": "We can use the `>` syntax followed by the filename we want to redirect the standard output stream to."}
+{"question": "What is the expected behavior of command line programs regarding error messages?", "answer": "Command line programs are expected to send error messages to the standard error stream so that error messages are still visible on the screen even if standard output is redirected to a file."}
+{"question": "What is the purpose of the `eprintln!` macro?", "answer": "The `eprintln!` macro prints to the standard error stream."}
+{"question": "How can we change the code to print error messages to standard error instead of standard output?", "answer": "We can replace the `println!` calls that print error messages with `eprintln!` calls."}
+{"question": "What is the expected behavior of the program after changing the error message printing to use `eprintln!`?", "answer": "Error messages should be printed to the screen, and the standard output should be redirected to the specified file."}
+{"question": "What is the purpose of the `process::exit(1)` function?", "answer": "The `process::exit(1)` function exits the program with an error code of 1, indicating that the program encountered an error."}
+{"question": "What is the purpose of the `unwrap_or_else` function?", "answer": "The `unwrap_or_else` function allows us to handle the result of a function that might return an error. If the function returns `Ok`, the value is returned. If the function returns `Err`, the provided closure is executed, and its result is returned."}
+{"question": "What is the purpose of the `if let` statement?", "answer": "The `if let` statement allows us to check if a variable matches a specific pattern. If the pattern matches, the code block following the `if let` statement is executed."}
+{"question": "What is the purpose of the `env::args()` function?", "answer": "The `env::args()` function returns an iterator over the command line arguments passed to the program."}
+{"question": "What is the purpose of the `collect()` function?", "answer": "The `collect()` function converts an iterator into a collection, such as a `Vec`."}
+{"question": "What is the purpose of the `Config::new()` function?", "answer": "The `Config::new()` function creates a new `Config` object from the command line arguments."}
+{"question": "What is the purpose of the `minigrep::run()` function?", "answer": "The `minigrep::run()` function runs the minigrep program with the provided configuration."}
+{"question": "What is the purpose of the `cargo run` command?", "answer": "The `cargo run` command builds and runs the Rust program."}
+{"question": "What is the purpose of the `cargo run > output.txt` command?", "answer": "The `cargo run > output.txt` command builds and runs the Rust program, redirecting the standard output stream to the file `output.txt`."}

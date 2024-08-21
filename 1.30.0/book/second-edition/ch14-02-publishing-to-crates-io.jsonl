@@ -1,0 +1,31 @@
+{"question": "How can I share my Rust code with others?", "answer": "You can publish your code as a package on crates.io."}
+{"question": "What is crates.io?", "answer": "crates.io is a registry that distributes the source code of Rust packages, primarily hosting open-source code."}
+{"question": "Why is it important to document your Rust packages?", "answer": "Documentation helps other users understand how and when to use your package."}
+{"question": "How do I write documentation comments in Rust?", "answer": "Use three slashes (`///`) instead of two, and support Markdown notation for formatting the text."}
+{"question": "Where should I place documentation comments?", "answer": "Place them just before the item they're documenting."}
+{"question": "How do I generate HTML documentation from documentation comments?", "answer": "Run `cargo doc`."}
+{"question": "Where does `cargo doc` put the generated HTML documentation?", "answer": "The *target/doc* directory."}
+{"question": "How do I build and open the HTML documentation for my crate and its dependencies in a web browser?", "answer": "Run `cargo doc --open`."}
+{"question": "What are some commonly used sections in documentation comments?", "answer": "Common sections include 'Panics', 'Errors', and 'Safety'."}
+{"question": "What is the purpose of the 'Panics' section in documentation comments?", "answer": "It describes scenarios where the function might panic, helping callers avoid those situations."}
+{"question": "What is the purpose of the 'Errors' section in documentation comments?", "answer": "It describes the kinds of errors that might occur and what conditions might cause them, helping callers handle different errors in different ways."}
+{"question": "What is the purpose of the 'Safety' section in documentation comments?", "answer": "It explains why a function is unsafe and covers the invariants that callers must uphold."}
+{"question": "What is the benefit of adding example code blocks in documentation comments?", "answer": "They demonstrate how to use the library and are run as tests when `cargo test` is executed."}
+{"question": "How do I add documentation to the item that contains the comments?", "answer": "Use `//!` instead of `///`."}
+{"question": "Where are `//!` comments typically used?", "answer": "Inside the crate root file (*src/lib.rs*) or inside a module to document the crate or module as a whole."}
+{"question": "How can I re-export items to create a public structure that's different from the internal structure?", "answer": "Use `pub use`."}
+{"question": "What is the purpose of re-exporting items with `pub use`?", "answer": "It makes a public API that's more convenient for users, decoupling the internal structure from the public one."}
+{"question": "How do I create an account on crates.io?", "answer": "Visit the home page at crates.io and log in via a GitHub account."}
+{"question": "How do I retrieve my API key on crates.io?", "answer": "Visit your account settings at https://crates.io/me/."}
+{"question": "How do I inform Cargo of my API token?", "answer": "Run the `cargo login` command with your API key."}
+{"question": "Where does Cargo store the API token locally?", "answer": "*~/.cargo/credentials*."}
+{"question": "What metadata is required to publish a crate?", "answer": "A unique name, description, and license."}
+{"question": "How do I specify the license for my crate?", "answer": "Use the `license` field in the *Cargo.toml* file and provide a license identifier value from the SPDX."}
+{"question": "What happens when I run `cargo publish`?", "answer": "It uploads a specific version of the crate to crates.io for others to use."}
+{"question": "Is publishing a crate permanent?", "answer": "Yes, a published version cannot be overwritten or deleted."}
+{"question": "How do I publish a new version of an existing crate?", "answer": "Change the `version` value in the *Cargo.toml* file and run `cargo publish`."}
+{"question": "What are the Semantic Versioning rules?", "answer": "They help determine the appropriate next version number based on the changes made."}
+{"question": "How do I prevent new projects from adding a specific version of a crate as a dependency?", "answer": "Run `cargo yank` and specify the version to yank."}
+{"question": "What does yanking a version do?", "answer": "It prevents new projects from depending on that version while allowing existing projects to continue using it."}
+{"question": "How do I undo a yank?", "answer": "Run `cargo yank` with the `--undo` flag."}
+{"question": "Does yanking a version delete any code?", "answer": "No, it only prevents new projects from depending on that version."}

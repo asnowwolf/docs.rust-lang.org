@@ -1,0 +1,128 @@
+{"question": "What is the purpose of the `!` operator in Rust?", "answer": "The `!` operator can be used for macro expansion, bitwise or logical complement, and the always empty bottom type for diverging functions."}
+{"question": "How can I overload the `!` operator in Rust?", "answer": "You can overload the `!` operator using the `Not` trait."}
+{"question": "What is the purpose of the `!=` operator in Rust?", "answer": "The `!=` operator performs a nonequality comparison."}
+{"question": "How can I overload the `!=` operator in Rust?", "answer": "You can overload the `!=` operator using the `PartialEq` trait."}
+{"question": "What is the purpose of the `%` operator in Rust?", "answer": "The `%` operator calculates the arithmetic remainder."}
+{"question": "How can I overload the `%` operator in Rust?", "answer": "You can overload the `%` operator using the `Rem` trait."}
+{"question": "What is the purpose of the `%=` operator in Rust?", "answer": "The `%=` operator calculates the arithmetic remainder and assigns the result to the left-hand side variable."}
+{"question": "How can I overload the `%=` operator in Rust?", "answer": "You can overload the `%=` operator using the `RemAssign` trait."}
+{"question": "What is the purpose of the `&` operator in Rust?", "answer": "The `&` operator can be used for borrowing, creating borrowed pointer types, and performing bitwise AND operations."}
+{"question": "How can I overload the `&` operator for bitwise AND operations in Rust?", "answer": "You can overload the `&` operator for bitwise AND operations using the `BitAnd` trait."}
+{"question": "What is the purpose of the `&=` operator in Rust?", "answer": "The `&=` operator performs a bitwise AND operation and assigns the result to the left-hand side variable."}
+{"question": "How can I overload the `&=` operator in Rust?", "answer": "You can overload the `&=` operator using the `BitAndAssign` trait."}
+{"question": "What is the purpose of the `&&` operator in Rust?", "answer": "The `&&` operator performs a logical AND operation."}
+{"question": "What is the purpose of the `*` operator in Rust?", "answer": "The `*` operator can be used for arithmetic multiplication, dereferencing, and creating raw pointers."}
+{"question": "How can I overload the `*` operator for arithmetic multiplication in Rust?", "answer": "You can overload the `*` operator for arithmetic multiplication using the `Mul` trait."}
+{"question": "What is the purpose of the `*=` operator in Rust?", "answer": "The `*=` operator performs arithmetic multiplication and assigns the result to the left-hand side variable."}
+{"question": "How can I overload the `*=` operator in Rust?", "answer": "You can overload the `*=` operator using the `MulAssign` trait."}
+{"question": "What is the purpose of the `+` operator in Rust?", "answer": "The `+` operator can be used for compound type constraints, arithmetic addition, and creating a range literal."}
+{"question": "How can I overload the `+` operator for arithmetic addition in Rust?", "answer": "You can overload the `+` operator for arithmetic addition using the `Add` trait."}
+{"question": "What is the purpose of the `+=` operator in Rust?", "answer": "The `+=` operator performs arithmetic addition and assigns the result to the left-hand side variable."}
+{"question": "How can I overload the `+=` operator in Rust?", "answer": "You can overload the `+=` operator using the `AddAssign` trait."}
+{"question": "What is the purpose of the `,` operator in Rust?", "answer": "The `,` operator is used as an argument and element separator."}
+{"question": "What is the purpose of the `-` operator in Rust?", "answer": "The `-` operator can be used for arithmetic negation, arithmetic subtraction, and creating a range literal."}
+{"question": "How can I overload the `-` operator for arithmetic negation in Rust?", "answer": "You can overload the `-` operator for arithmetic negation using the `Neg` trait."}
+{"question": "How can I overload the `-` operator for arithmetic subtraction in Rust?", "answer": "You can overload the `-` operator for arithmetic subtraction using the `Sub` trait."}
+{"question": "What is the purpose of the `-=` operator in Rust?", "answer": "The `-=` operator performs arithmetic subtraction and assigns the result to the left-hand side variable."}
+{"question": "How can I overload the `-=` operator in Rust?", "answer": "You can overload the `-=` operator using the `SubAssign` trait."}
+{"question": "What is the purpose of the `->` operator in Rust?", "answer": "The `->` operator is used to specify the return type of functions and closures."}
+{"question": "What is the purpose of the `.` operator in Rust?", "answer": "The `.` operator is used for member access."}
+{"question": "What is the purpose of the `..` operator in Rust?", "answer": "The `..` operator can be used to create right-exclusive range literals, update struct literals, and bind patterns."}
+{"question": "What is the purpose of the `...` operator in Rust?", "answer": "The `...` operator is used to create inclusive range patterns."}
+{"question": "What is the purpose of the `/` operator in Rust?", "answer": "The `/` operator performs arithmetic division."}
+{"question": "How can I overload the `/` operator in Rust?", "answer": "You can overload the `/` operator using the `Div` trait."}
+{"question": "What is the purpose of the `/=` operator in Rust?", "answer": "The `/=` operator performs arithmetic division and assigns the result to the left-hand side variable."}
+{"question": "How can I overload the `/=` operator in Rust?", "answer": "You can overload the `/=` operator using the `DivAssign` trait."}
+{"question": "What is the purpose of the `:` operator in Rust?", "answer": "The `:` operator can be used for constraints, struct field initializers, and loop labels."}
+{"question": "What is the purpose of the `;` operator in Rust?", "answer": "The `;` operator is used as a statement and item terminator, and as part of fixed-size array syntax."}
+{"question": "What is the purpose of the `<<` operator in Rust?", "answer": "The `<<` operator performs a left-shift operation."}
+{"question": "How can I overload the `<<` operator in Rust?", "answer": "You can overload the `<<` operator using the `Shl` trait."}
+{"question": "What is the purpose of the `<<=` operator in Rust?", "answer": "The `<<=` operator performs a left-shift operation and assigns the result to the left-hand side variable."}
+{"question": "How can I overload the `<<=` operator in Rust?", "answer": "You can overload the `<<=` operator using the `ShlAssign` trait."}
+{"question": "What is the purpose of the `<` operator in Rust?", "answer": "The `<` operator performs a less than comparison."}
+{"question": "How can I overload the `<` operator in Rust?", "answer": "You can overload the `<` operator using the `PartialOrd` trait."}
+{"question": "What is the purpose of the `<=` operator in Rust?", "answer": "The `<=` operator performs a less than or equal to comparison."}
+{"question": "How can I overload the `<=` operator in Rust?", "answer": "You can overload the `<=` operator using the `PartialOrd` trait."}
+{"question": "What is the purpose of the `=` operator in Rust?", "answer": "The `=` operator is used for assignment and equivalence."}
+{"question": "What is the purpose of the `==` operator in Rust?", "answer": "The `==` operator performs an equality comparison."}
+{"question": "How can I overload the `==` operator in Rust?", "answer": "You can overload the `==` operator using the `PartialEq` trait."}
+{"question": "What is the purpose of the `=>` operator in Rust?", "answer": "The `=>` operator is part of match arm syntax."}
+{"question": "What is the purpose of the `>` operator in Rust?", "answer": "The `>` operator performs a greater than comparison."}
+{"question": "How can I overload the `>` operator in Rust?", "answer": "You can overload the `>` operator using the `PartialOrd` trait."}
+{"question": "What is the purpose of the `>=` operator in Rust?", "answer": "The `>=` operator performs a greater than or equal to comparison."}
+{"question": "How can I overload the `>=` operator in Rust?", "answer": "You can overload the `>=` operator using the `PartialOrd` trait."}
+{"question": "What is the purpose of the `>>` operator in Rust?", "answer": "The `>>` operator performs a right-shift operation."}
+{"question": "How can I overload the `>>` operator in Rust?", "answer": "You can overload the `>>` operator using the `Shr` trait."}
+{"question": "What is the purpose of the `>>=` operator in Rust?", "answer": "The `>>=` operator performs a right-shift operation and assigns the result to the left-hand side variable."}
+{"question": "How can I overload the `>>=` operator in Rust?", "answer": "You can overload the `>>=` operator using the `ShrAssign` trait."}
+{"question": "What is the purpose of the `@` operator in Rust?", "answer": "The `@` operator is used for pattern binding."}
+{"question": "What is the purpose of the `^` operator in Rust?", "answer": "The `^` operator performs a bitwise exclusive OR operation."}
+{"question": "How can I overload the `^` operator in Rust?", "answer": "You can overload the `^` operator using the `BitXor` trait."}
+{"question": "What is the purpose of the `^=` operator in Rust?", "answer": "The `^=` operator performs a bitwise exclusive OR operation and assigns the result to the left-hand side variable."}
+{"question": "How can I overload the `^=` operator in Rust?", "answer": "You can overload the `^=` operator using the `BitXorAssign` trait."}
+{"question": "What is the purpose of the `|` operator in Rust?", "answer": "The `|` operator can be used for pattern alternatives and bitwise OR operations."}
+{"question": "How can I overload the `|` operator for bitwise OR operations in Rust?", "answer": "You can overload the `|` operator for bitwise OR operations using the `BitOr` trait."}
+{"question": "What is the purpose of the `|=` operator in Rust?", "answer": "The `|=` operator performs a bitwise OR operation and assigns the result to the left-hand side variable."}
+{"question": "How can I overload the `|=` operator in Rust?", "answer": "You can overload the `|=` operator using the `BitOrAssign` trait."}
+{"question": "What is the purpose of the `||` operator in Rust?", "answer": "The `||` operator performs a logical OR operation."}
+{"question": "What is the purpose of the `?` operator in Rust?", "answer": "The `?` operator is used for error propagation."}
+{"question": "What is the purpose of the `'ident` symbol in Rust?", "answer": "The `'ident` symbol is used to represent a named lifetime or loop label."}
+{"question": "What is the purpose of the `...u8`, `...i32`, `...f64`, `...usize`, etc. symbols in Rust?", "answer": "These symbols are used to represent numeric literals of specific types."}
+{"question": "What is the purpose of the `\"...\"` symbol in Rust?", "answer": "The `\"...\"` symbol is used to represent a string literal."}
+{"question": "What is the purpose of the `r\"...\"`, `r#\"...\"#`, `r##\"...\"##`, etc. symbols in Rust?", "answer": "These symbols are used to represent raw string literals, where escape characters are not processed."}
+{"question": "What is the purpose of the `b\"...\"` symbol in Rust?", "answer": "The `b\"...\"` symbol is used to represent a byte string literal, which constructs a `[u8]` instead of a string."}
+{"question": "What is the purpose of the `br\"...\"`, `br#\"...\"#`, `br##\"...\"##`, etc. symbols in Rust?", "answer": "These symbols are used to represent raw byte string literals, which combine the features of raw and byte string literals."}
+{"question": "What is the purpose of the `'...'` symbol in Rust?", "answer": "The `'...'` symbol is used to represent a character literal."}
+{"question": "What is the purpose of the `b'...'` symbol in Rust?", "answer": "The `b'...'` symbol is used to represent an ASCII byte literal."}
+{"question": "What is the purpose of the `|...| expr` symbol in Rust?", "answer": "The `|...| expr` symbol is used to represent a closure."}
+{"question": "What is the purpose of the `!` symbol when used as the always empty bottom type for diverging functions in Rust?", "answer": "The `!` symbol represents the always empty bottom type, which is used for functions that never return."}
+{"question": "What is the purpose of the `_` symbol in Rust?", "answer": "The `_` symbol is used as an \"ignored\" pattern binding and to make integer literals more readable."}
+{"question": "What is the purpose of the `ident::ident` symbol in Rust?", "answer": "The `ident::ident` symbol is used to represent a namespace path."}
+{"question": "What is the purpose of the `::path` symbol in Rust?", "answer": "The `::path` symbol is used to represent a path relative to the crate root, which is an explicitly absolute path."}
+{"question": "What is the purpose of the `self::path` symbol in Rust?", "answer": "The `self::path` symbol is used to represent a path relative to the current module, which is an explicitly relative path."}
+{"question": "What is the purpose of the `super::path` symbol in Rust?", "answer": "The `super::path` symbol is used to represent a path relative to the parent of the current module."}
+{"question": "What is the purpose of the `type::ident`, `<type as trait>::ident` symbol in Rust?", "answer": "The `type::ident`, `<type as trait>::ident` symbol is used to represent associated constants, functions, and types."}
+{"question": "What is the purpose of the `<type>::...` symbol in Rust?", "answer": "The `<type>::...` symbol is used to represent associated items for a type that cannot be directly named, such as `<&T>::...`, `<[T]>::...`, etc."}
+{"question": "What is the purpose of the `trait::method(...)` symbol in Rust?", "answer": "The `trait::method(...)` symbol is used to disambiguate a method call by naming the trait that defines it."}
+{"question": "What is the purpose of the `type::method(...)` symbol in Rust?", "answer": "The `type::method(...)` symbol is used to disambiguate a method call by naming the type for which it’s defined."}
+{"question": "What is the purpose of the `<type as trait>::method(...)` symbol in Rust?", "answer": "The `<type as trait>::method(...)` symbol is used to disambiguate a method call by naming the trait and type."}
+{"question": "What is the purpose of the `path<...>` symbol in Rust?", "answer": "The `path<...>` symbol is used to specify parameters to a generic type in a type, such as `Vec<u8>`."}
+{"question": "What is the purpose of the `path::<...>`, `method::<...>` symbol in Rust?", "answer": "The `path::<...>`, `method::<...>` symbol is used to specify parameters to a generic type, function, or method in an expression, often referred to as turbofish, such as `\"42\".parse::<i32>()`."}
+{"question": "What is the purpose of the `fn ident<...> ...` symbol in Rust?", "answer": "The `fn ident<...> ...` symbol is used to define a generic function."}
+{"question": "What is the purpose of the `struct ident<...> ...` symbol in Rust?", "answer": "The `struct ident<...> ...` symbol is used to define a generic structure."}
+{"question": "What is the purpose of the `enum ident<...> ...` symbol in Rust?", "answer": "The `enum ident<...> ...` symbol is used to define a generic enumeration."}
+{"question": "What is the purpose of the `impl<...> ...` symbol in Rust?", "answer": "The `impl<...> ...` symbol is used to define a generic implementation."}
+{"question": "What is the purpose of the `for<...> type` symbol in Rust?", "answer": "The `for<...> type` symbol is used to represent higher-ranked lifetime bounds."}
+{"question": "What is the purpose of the `type<ident=type>` symbol in Rust?", "answer": "The `type<ident=type>` symbol is used to represent a generic type where one or more associated types have specific assignments, such as `Iterator<Item=T>`."}
+{"question": "What is the purpose of the `T: U` symbol in Rust?", "answer": "The `T: U` symbol is used to constrain a generic parameter `T` to types that implement `U`."}
+{"question": "What is the purpose of the `T: 'a` symbol in Rust?", "answer": "The `T: 'a` symbol is used to constrain a generic type `T` to outlive lifetime `'a`, meaning the type cannot transitively contain any references with lifetimes shorter than `'a`."}
+{"question": "What is the purpose of the `T : 'static` symbol in Rust?", "answer": "The `T : 'static` symbol is used to constrain a generic type `T` to contain no borrowed references other than `'static` ones."}
+{"question": "What is the purpose of the `'b: 'a` symbol in Rust?", "answer": "The `'b: 'a` symbol is used to constrain a generic lifetime `'b` to outlive lifetime `'a`."}
+{"question": "What is the purpose of the `T: ?Sized` symbol in Rust?", "answer": "The `T: ?Sized` symbol is used to allow a generic type parameter to be a dynamically sized type."}
+{"question": "What is the purpose of the `'a + trait`, `trait + trait` symbol in Rust?", "answer": "The `'a + trait`, `trait + trait` symbol is used to represent compound type constraints."}
+{"question": "What is the purpose of the `#[meta]` symbol in Rust?", "answer": "The `#[meta]` symbol is used to represent an outer attribute."}
+{"question": "What is the purpose of the `#![meta]` symbol in Rust?", "answer": "The `#![meta]` symbol is used to represent an inner attribute."}
+{"question": "What is the purpose of the `$ident` symbol in Rust?", "answer": "The `$ident` symbol is used for macro substitution."}
+{"question": "What is the purpose of the `$ident:kind` symbol in Rust?", "answer": "The `$ident:kind` symbol is used for macro capture."}
+{"question": "What is the purpose of the `$(…)…` symbol in Rust?", "answer": "The `$(…)…` symbol is used for macro repetition."}
+{"question": "What is the purpose of the `//` symbol in Rust?", "answer": "The `//` symbol is used to represent a line comment."}
+{"question": "What is the purpose of the `//!` symbol in Rust?", "answer": "The `//!` symbol is used to represent an inner line doc comment."}
+{"question": "What is the purpose of the `///` symbol in Rust?", "answer": "The `///` symbol is used to represent an outer line doc comment."}
+{"question": "What is the purpose of the `/*...*/` symbol in Rust?", "answer": "The `/*...*/` symbol is used to represent a block comment."}
+{"question": "What is the purpose of the `/*!...*/` symbol in Rust?", "answer": "The `/*!...*/` symbol is used to represent an inner block doc comment."}
+{"question": "What is the purpose of the `/**...*/` symbol in Rust?", "answer": "The `/**...*/` symbol is used to represent an outer block doc comment."}
+{"question": "What is the purpose of the `()` symbol in Rust?", "answer": "The `()` symbol is used to represent an empty tuple (aka unit), both as a literal and a type."}
+{"question": "What is the purpose of the `(expr)` symbol in Rust?", "answer": "The `(expr)` symbol is used to represent a parenthesized expression."}
+{"question": "What is the purpose of the `(expr,)` symbol in Rust?", "answer": "The `(expr,)` symbol is used to represent a single-element tuple expression."}
+{"question": "What is the purpose of the `(type,)` symbol in Rust?", "answer": "The `(type,)` symbol is used to represent a single-element tuple type."}
+{"question": "What is the purpose of the `(expr, ...)` symbol in Rust?", "answer": "The `(expr, ...)` symbol is used to represent a tuple expression."}
+{"question": "What is the purpose of the `(type, ...)` symbol in Rust?", "answer": "The `(type, ...)` symbol is used to represent a tuple type."}
+{"question": "What is the purpose of the `expr(expr, ...)` symbol in Rust?", "answer": "The `expr(expr, ...)` symbol is used to represent a function call expression, and is also used to initialize tuple `struct`s and tuple `enum` variants."}
+{"question": "What is the purpose of the `ident!(...)`, `ident!{...}`, `ident![...]` symbol in Rust?", "answer": "The `ident!(...)`, `ident!{...}`, `ident![...]` symbol is used to represent a macro invocation."}
+{"question": "What is the purpose of the `expr.0`, `expr.1`, etc. symbol in Rust?", "answer": "The `expr.0`, `expr.1`, etc. symbol is used to represent tuple indexing."}
+{"question": "What is the purpose of the `{...}` symbol in Rust?", "answer": "The `{...}` symbol is used to represent a block expression and a `struct` literal."}
+{"question": "What is the purpose of the `[...]` symbol in Rust?", "answer": "The `[...]` symbol is used to represent an array literal."}
+{"question": "What is the purpose of the `[expr; len]` symbol in Rust?", "answer": "The `[expr; len]` symbol is used to represent an array literal containing `len` copies of `expr`."}
+{"question": "What is the purpose of the `[type; len]` symbol in Rust?", "answer": "The `[type; len]` symbol is used to represent an array type containing `len` instances of `type`."}
+{"question": "What is the purpose of the `expr[expr]` symbol in Rust?", "answer": "The `expr[expr]` symbol is used to represent collection indexing, which can be overloaded using the `Index` and `IndexMut` traits."}
+{"question": "What is the purpose of the `expr[..]`, `expr[a..]`, `expr[..b]`, `expr[a..b]` symbol in Rust?", "answer": "The `expr[..]`, `expr[a..]`, `expr[..b]`, `expr[a..b]` symbol is used to represent collection indexing pretending to be collection slicing, using `Range`, `RangeFrom`, `RangeTo`, or `RangeFull` as the \"index\"."}

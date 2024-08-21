@@ -1,0 +1,24 @@
+{"question": "What is the iterator pattern?", "answer": "The iterator pattern allows you to perform some task on a sequence of items in turn. An iterator is responsible for the logic of iterating over each item and determining when the sequence has finished."}
+{"question": "What is the benefit of using iterators?", "answer": "You don't have to reimplement the logic of iterating over each item and determining when the sequence has finished yourself."}
+{"question": "Are Rust iterators lazy?", "answer": "Yes, Rust iterators are lazy, meaning they have no effect until you call methods that consume the iterator to use it up."}
+{"question": "How do you create an iterator over the items in a vector?", "answer": "Call the `iter` method defined on `Vec<T>`."}
+{"question": "How do you use an iterator in a `for` loop?", "answer": "You can use the iterator directly in the `for` loop."}
+{"question": "What is the `Iterator` trait?", "answer": "The `Iterator` trait is defined in the standard library and is implemented by all iterators."}
+{"question": "What is the `next` method?", "answer": "The `next` method is the only method required to be defined when implementing the `Iterator` trait. It returns one item of the iterator at a time wrapped in `Some` and, when iteration is over, returns `None`."}
+{"question": "What does the `Item` type represent in the `Iterator` trait?", "answer": "The `Item` type represents the type returned from the iterator."}
+{"question": "What happens when you call the `next` method on an iterator?", "answer": "Calling the `next` method changes the internal state of the iterator, which keeps track of where it is in the sequence. This consumes the iterator, meaning each call to `next` eats up an item from the iterator."}
+{"question": "What is the difference between `iter`, `into_iter`, and `iter_mut`?", "answer": "The `iter` method produces an iterator over immutable references. The `into_iter` method takes ownership of the vector and returns owned values. The `iter_mut` method iterates over mutable references."}
+{"question": "What are consuming adaptors?", "answer": "Methods that call `next` are called consuming adaptors because calling them uses up the iterator."}
+{"question": "What is the `sum` method?", "answer": "The `sum` method takes ownership of the iterator and iterates through the items by repeatedly calling `next`, thus consuming the iterator. As it iterates through, it adds each item to a running total and returns the total when iteration is complete."}
+{"question": "What are iterator adaptors?", "answer": "Methods defined on the `Iterator` trait that allow you to change iterators into different kinds of iterators."}
+{"question": "What is the `map` method?", "answer": "The `map` method takes a closure to call on each item to produce a new iterator."}
+{"question": "What is the `collect` method?", "answer": "The `collect` method consumes the iterator and collects the resulting values into a collection data type."}
+{"question": "What is the `filter` method?", "answer": "The `filter` method takes a closure that takes each item from the iterator and returns a Boolean. If the closure returns `true`, the value will be included in the iterator produced by `filter`. If the closure returns `false`, the value won’t be included in the resulting iterator."}
+{"question": "How can you create your own iterators?", "answer": "You can create your own iterators by implementing the `Iterator` trait on your own types. The only method you’re required to provide a definition for is the `next` method."}
+{"question": "What is the `Counter` struct?", "answer": "The `Counter` struct is a custom struct that implements the `Iterator` trait and is used to demonstrate creating your own iterators."}
+{"question": "What is the `count` field in the `Counter` struct?", "answer": "The `count` field is a `u32` value that keeps track of where we are in the process of iterating from 1 to 5."}
+{"question": "What is the `new` function for the `Counter` struct?", "answer": "The `new` function creates instances of `Counter` with an initial value of 0 for the `count` field."}
+{"question": "What does the `next` method implementation for the `Counter` struct do?", "answer": "The `next` method implementation adds 1 to the current value of `count` and returns the current value wrapped in `Some` if `count` is less than 6. If `count` is 6 or higher, it returns `None`."}
+{"question": "What is the `zip` method?", "answer": "The `zip` method takes two iterators and produces an iterator of pairs, where each pair contains one element from each of the input iterators."}
+{"question": "What is the `skip` method?", "answer": "The `skip` method takes an iterator and produces a new iterator that skips the first `n` elements of the input iterator."}
+{"question": "What is the `sum` method?", "answer": "The `sum` method takes an iterator and returns the sum of all the elements in the iterator."}

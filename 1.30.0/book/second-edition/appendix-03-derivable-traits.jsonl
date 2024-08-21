@@ -1,0 +1,20 @@
+{"question": "What is the `derive` attribute used for?", "answer": "The `derive` attribute generates code that implements a trait with its own default implementation on the type you've annotated with the `derive` syntax."}
+{"question": "What is the purpose of Appendix C?", "answer": "Appendix C provides a reference of all the traits in the standard library that you can use with `derive`."}
+{"question": "What is the purpose of the `Debug` trait?", "answer": "The `Debug` trait enables debug formatting in format strings, which you indicate by adding `:?` within `{}` placeholders."}
+{"question": "What is the purpose of the `PartialEq` trait?", "answer": "The `PartialEq` trait allows you to compare instances of a type to check for equality and enables use of the `==` and `!=` operators."}
+{"question": "How does deriving `PartialEq` on structs work?", "answer": "When `PartialEq` is derived on structs, two instances are equal only if *all* fields are equal, and the instances are not equal if any fields are not equal."}
+{"question": "How does deriving `PartialEq` on enums work?", "answer": "When derived on enums, each variant is equal to itself and not equal to the other variants."}
+{"question": "What is the purpose of the `Eq` trait?", "answer": "The `Eq` trait has no methods. Its purpose is to signal that for every value of the annotated type, the value is equal to itself."}
+{"question": "What is the purpose of the `PartialOrd` trait?", "answer": "The `PartialOrd` trait allows you to compare instances of a type for sorting purposes. A type that implements `PartialOrd` can be used with the `<`, `>`, `<=`, and `>=` operators."}
+{"question": "What is the purpose of the `Ord` trait?", "answer": "The `Ord` trait allows you to know that for any two values of the annotated type, a valid ordering will exist."}
+{"question": "What is the purpose of the `Clone` trait?", "answer": "The `Clone` trait allows you to explicitly create a deep copy of a value, and the duplication process might involve running arbitrary code and copying heap data."}
+{"question": "What is the purpose of the `Copy` trait?", "answer": "The `Copy` trait allows you to duplicate a value by only copying bits stored on the stack; no arbitrary code is necessary."}
+{"question": "What is the purpose of the `Hash` trait?", "answer": "The `Hash` trait allows you to take an instance of a type of arbitrary size and map that instance to a value of fixed size using a hash function."}
+{"question": "What is the purpose of the `Default` trait?", "answer": "The `Default` trait allows you to create a default value for a type."}
+{"question": "What is an example of a trait that cannot be derived?", "answer": "An example of a trait that can’t be derived is `Display`, which handles formatting for end users."}
+{"question": "What is the purpose of the `Display` trait?", "answer": "The `Display` trait handles formatting for end users."}
+{"question": "What is a procedural macro?", "answer": "Implementing `derive` involves using a procedural macro, which is covered in Appendix D."}
+{"question": "What is the purpose of the `assert_eq!` macro?", "answer": "The `assert_eq!` macro prints the values of instances given as arguments if the equality assertion fails so programmers can see why the two instances weren’t equal."}
+{"question": "What is the purpose of the `gen_range` method?", "answer": "The `gen_range` method from the `rand` crate that generates a random value in the range specified by a low value and a high value."}
+{"question": "What is the purpose of the `to_vec` method?", "answer": "The `to_vec` method on a slice doesn’t own the type instances it contains, but the vector returned from `to_vec` will need to own its instances, so `to_vec` calls `clone` on each item."}
+{"question": "What is the purpose of the `unwrap_or_default` method?", "answer": "If the `Option<T>` is `None`, the method `unwrap_or_default` will return the result of `Default::default` for the type `T` stored in the `Option<T>`."}

@@ -1,0 +1,20 @@
+{"question": "What are the basic building blocks for controlling the flow of execution in Rust?", "answer": "The most common constructs are `if` expressions and loops."}
+{"question": "What does an `if` expression do?", "answer": "An `if` expression allows you to branch your code depending on conditions. You provide a condition and then state, “If this condition is met, run this block of code. If the condition is not met, do not run this block of code.”"}
+{"question": "How do you create an `if` expression?", "answer": "All `if` expressions start with the keyword `if`, which is followed by a condition. The block of code we want to execute if the condition is true is placed immediately after the condition inside curly brackets."}
+{"question": "What is an `else` expression?", "answer": "An `else` expression provides an alternative block of code to execute should the condition evaluate to false."}
+{"question": "What happens if you don't provide an `else` expression and the condition is false?", "answer": "The program will just skip the `if` block and move on to the next bit of code."}
+{"question": "What type must the condition in an `if` expression be?", "answer": "The condition must be a `bool`."}
+{"question": "What happens if the condition in an `if` expression is not a `bool`?", "answer": "Rust will throw an error."}
+{"question": "How can you handle multiple conditions in an `if` expression?", "answer": "You can combine `if` and `else` in an `else if` expression."}
+{"question": "What happens when an `if` expression with multiple conditions is executed?", "answer": "Rust checks each `if` expression in turn and executes the first body for which the condition holds true. Once it finds one, it doesn’t even check the rest."}
+{"question": "What is a good alternative to using too many `else if` expressions?", "answer": "You might want to refactor your code using the `match` construct."}
+{"question": "Can you use an `if` expression on the right side of a `let` statement?", "answer": "Yes, because `if` is an expression."}
+{"question": "What must be true about the types of the values returned by the `if` and `else` arms of an `if` expression used in a `let` statement?", "answer": "The values must be the same type."}
+{"question": "What are the three kinds of loops in Rust?", "answer": "Rust has three kinds of loops: `loop`, `while`, and `for`."}
+{"question": "What does the `loop` keyword do?", "answer": "The `loop` keyword tells Rust to execute a block of code over and over again forever or until you explicitly tell it to stop."}
+{"question": "How can you stop a `loop` from executing?", "answer": "You can place the `break` keyword within the loop to tell the program when to stop executing the loop."}
+{"question": "What does a `while` loop do?", "answer": "A `while` loop evaluates a condition within a loop. While the condition is true, the loop runs. When the condition ceases to be true, the program calls `break`, stopping the loop."}
+{"question": "What is a more concise alternative to using a `while` loop to loop over the elements of a collection?", "answer": "You can use a `for` loop."}
+{"question": "What does a `for` loop do?", "answer": "A `for` loop executes some code for each item in a collection."}
+{"question": "What is a `Range`?", "answer": "A `Range` is a type provided by the standard library that generates all numbers in sequence starting from one number and ending before another number."}
+{"question": "How can you reverse a `Range`?", "answer": "You can use the `rev` method."}

@@ -1,0 +1,6 @@
+{"question": "What are the two major categories of errors in Rust?", "answer": "Rust groups errors into two major categories: *recoverable* and *unrecoverable* errors."}
+{"question": "What is a recoverable error?", "answer": "A recoverable error is an error that can be handled and the program can continue running, such as a file not found error."}
+{"question": "What is an unrecoverable error?", "answer": "An unrecoverable error is an error that indicates a bug in the program and should cause the program to stop running, such as trying to access a location beyond the end of an array."}
+{"question": "How does Rust handle recoverable errors?", "answer": "Rust uses the type `Result<T, E>` to represent recoverable errors."}
+{"question": "How does Rust handle unrecoverable errors?", "answer": "Rust uses the `panic!` macro to stop execution when the program encounters an unrecoverable error."}
+{"question": "What is the difference between how Rust handles recoverable and unrecoverable errors?", "answer": "Rust uses the `Result<T, E>` type for recoverable errors and the `panic!` macro for unrecoverable errors."}

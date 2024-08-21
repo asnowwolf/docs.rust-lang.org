@@ -1,0 +1,8 @@
+{"question": "What is the purpose of the `if let` syntax in Rust?", "answer": "The `if let` syntax combines `if` and `let` to provide a concise way to handle values that match a specific pattern while ignoring others."}
+{"question": "How does `if let` work?", "answer": "It takes a pattern and an expression separated by an equal sign. The expression is evaluated, and if it matches the pattern, the code within the `if let` block is executed."}
+{"question": "What are the advantages of using `if let` over `match`?", "answer": "It offers less typing, less indentation, and less boilerplate code."}
+{"question": "What is the trade-off for using `if let` over `match`?", "answer": "You lose the exhaustive checking that `match` enforces."}
+{"question": "How can you include an `else` block with an `if let` statement?", "answer": "The `else` block is executed if the pattern in the `if let` statement does not match the expression."}
+{"question": "What is the equivalent of the `else` block in a `match` expression?", "answer": "The `else` block in an `if let` statement is equivalent to the `_` case in a `match` expression."}
+{"question": "What is the purpose of the `Option<T>` type in Rust?", "answer": "The `Option<T>` type helps prevent errors by representing the possibility of a value being present or absent."}
+{"question": "What are the benefits of creating custom types using structs and enums?", "answer": "Creating custom types ensures type safety, as the compiler will enforce that functions receive only values of the expected type."}

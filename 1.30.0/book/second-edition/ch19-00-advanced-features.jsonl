@@ -1,0 +1,6 @@
+{"question": "What are some advanced features of the Rust programming language?", "answer": "This chapter covers Unsafe Rust, advanced lifetimes, advanced traits, advanced types, and advanced functions and closures."}
+{"question": "What is Unsafe Rust?", "answer": "Unsafe Rust allows you to opt out of some of Rust's guarantees and take responsibility for manually upholding those guarantees."}
+{"question": "What are advanced lifetimes?", "answer": "Advanced lifetimes provide syntax for complex lifetime situations."}
+{"question": "What are some advanced trait features?", "answer": "Advanced trait features include associated types, default type parameters, fully qualified syntax, supertraits, and the newtype pattern in relation to traits."}
+{"question": "What are some advanced type features?", "answer": "Advanced type features include more about the newtype pattern, type aliases, the never type, and dynamically sized types."}
+{"question": "What are some advanced function and closure features?", "answer": "Advanced function and closure features include function pointers and returning closures."}

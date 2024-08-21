@@ -1,0 +1,32 @@
+{"question": "What is a data type in Rust?", "answer": "A data type tells Rust what kind of data is being specified so it knows how to work with that data."}
+{"question": "What are the two main subsets of data types in Rust?", "answer": "The two main subsets of data types in Rust are scalar and compound."}
+{"question": "What does it mean for a language to be statically typed?", "answer": "A statically typed language requires that the types of all variables be known at compile time."}
+{"question": "How can the Rust compiler infer the type of a variable?", "answer": "The compiler can usually infer the type of a variable based on the value and how it is used."}
+{"question": "How do you add a type annotation to a variable in Rust?", "answer": "You add a type annotation by using a colon (:) followed by the type name after the variable name."}
+{"question": "What is a scalar type?", "answer": "A scalar type represents a single value."}
+{"question": "What are the four primary scalar types in Rust?", "answer": "The four primary scalar types in Rust are integers, floating-point numbers, Booleans, and characters."}
+{"question": "What is an integer?", "answer": "An integer is a number without a fractional component."}
+{"question": "What does the `u32` type represent?", "answer": "The `u32` type represents an unsigned integer that takes up 32 bits of space."}
+{"question": "What is the difference between signed and unsigned integers?", "answer": "Signed integers can be negative or positive, while unsigned integers can only be positive."}
+{"question": "What is the difference between `isize` and `usize`?", "answer": "The `isize` and `usize` types depend on the architecture of the computer: 64 bits on a 64-bit architecture and 32 bits on a 32-bit architecture."}
+{"question": "What are the different ways to write integer literals in Rust?", "answer": "Integer literals can be written in decimal, hexadecimal, octal, binary, and byte forms."}
+{"question": "What is the default integer type in Rust?", "answer": "The default integer type in Rust is `i32`."}
+{"question": "When would you use `isize` or `usize`?", "answer": "You would use `isize` or `usize` when indexing some sort of collection."}
+{"question": "What are floating-point numbers?", "answer": "Floating-point numbers are numbers with decimal points."}
+{"question": "What are the two floating-point types in Rust?", "answer": "The two floating-point types in Rust are `f32` and `f64`."}
+{"question": "What is the default floating-point type in Rust?", "answer": "The default floating-point type in Rust is `f64`."}
+{"question": "What are the basic mathematical operations supported by Rust?", "answer": "Rust supports addition, subtraction, multiplication, division, and remainder."}
+{"question": "What is the Boolean type in Rust?", "answer": "The Boolean type in Rust has two possible values: `true` and `false`."}
+{"question": "How is the Boolean type specified in Rust?", "answer": "The Boolean type in Rust is specified using `bool`."}
+{"question": "What is the `char` type in Rust?", "answer": "The `char` type in Rust is the language's most primitive alphabetic type."}
+{"question": "What does a `char` represent in Rust?", "answer": "A `char` represents a Unicode Scalar Value."}
+{"question": "What is a compound type?", "answer": "A compound type can group multiple values into one type."}
+{"question": "What are the two primitive compound types in Rust?", "answer": "The two primitive compound types in Rust are tuples and arrays."}
+{"question": "What is a tuple?", "answer": "A tuple is a general way of grouping together some number of other values with a variety of types into one compound type."}
+{"question": "How do you create a tuple in Rust?", "answer": "You create a tuple by writing a comma-separated list of values inside parentheses."}
+{"question": "How do you access individual values in a tuple?", "answer": "You can access individual values in a tuple using pattern matching to destructure the tuple or by using a period (.) followed by the index of the value you want to access."}
+{"question": "What is an array?", "answer": "An array is a collection of multiple values where every element must have the same type."}
+{"question": "What is the difference between an array and a vector?", "answer": "Arrays in Rust have a fixed length, while vectors can grow or shrink in size."}
+{"question": "When would you use an array instead of a vector?", "answer": "You would use an array when you want your data allocated on the stack rather than the heap or when you want to ensure you always have a fixed number of elements."}
+{"question": "How do you access elements of an array?", "answer": "You access elements of an array using indexing."}
+{"question": "What happens if you try to access an element of an array that is past the end of the array?", "answer": "Rust will panic, which means the program will exit with an error."}

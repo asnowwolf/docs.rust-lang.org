@@ -1,0 +1,8 @@
+{"question": "What are patterns in Rust?", "answer": "Patterns are a special syntax in Rust for matching against the structure of types, both complex and simple."}
+{"question": "What are patterns used for in Rust?", "answer": "Patterns are used in conjunction with `match` expressions and other constructs to give you more control over a program's control flow."}
+{"question": "What are the components of a pattern?", "answer": "Patterns consist of some combination of literals, destructured arrays, enums, structs, or tuples, variables, wildcards, and placeholders."}
+{"question": "What does a pattern describe?", "answer": "Patterns describe the shape of the data we're working with."}
+{"question": "How are patterns used to determine whether a program has the correct data?", "answer": "Patterns are compared to values to determine whether the value fits the shape of the pattern."}
+{"question": "What happens if a pattern matches a value?", "answer": "If a pattern matches a value, we can use the value parts in our code."}
+{"question": "What happens if a pattern doesn't match a value?", "answer": "If a pattern doesn't match a value, the code associated with the pattern won't run."}
+{"question": "What is covered in this chapter?", "answer": "This chapter covers all things related to patterns, including valid places to use patterns, the difference between refutable and irrefutable patterns, and the different kinds of pattern syntax."}

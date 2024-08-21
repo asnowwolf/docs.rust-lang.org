@@ -1,0 +1,19 @@
+{"question": "What is the issue with the tuple code in Listing 4-5?", "answer": "The issue is that the `String` is moved into the `calculate_length` function, so we have to return it to the calling function to still use it after the call."}
+{"question": "How can we define and use a `calculate_length` function that takes a reference to an object as a parameter instead of taking ownership?", "answer": "We can pass `&s1` into `calculate_length` and define the function to take `&String` instead of `String`."}
+{"question": "What are ampersands used for in this context?", "answer": "Ampersands are references, which allow you to refer to a value without taking ownership of it."}
+{"question": "What is the opposite of referencing?", "answer": "The opposite of referencing is dereferencing, which is accomplished with the dereference operator, `*`."}
+{"question": "What does the `&s1` syntax do?", "answer": "It creates a reference that refers to the value of `s1` but does not own it."}
+{"question": "What happens to the value a reference points to when the reference goes out of scope?", "answer": "The value is not dropped because the reference does not own it."}
+{"question": "What is borrowing?", "answer": "Having references as function parameters is called borrowing. It's like borrowing something from someone in real life - you have to give it back when you're done."}
+{"question": "What happens if we try to modify something we're borrowing?", "answer": "It doesn't work because references are immutable by default."}
+{"question": "How can we modify a borrowed value?", "answer": "We can create a mutable reference with `&mut s` and accept a mutable reference with `some_string: &mut String`."}
+{"question": "What is the restriction on mutable references?", "answer": "You can only have one mutable reference to a particular piece of data in a particular scope."}
+{"question": "What is a data race?", "answer": "A data race occurs when two or more pointers access the same data at the same time, at least one is writing to the data, and there's no mechanism to synchronize access."}
+{"question": "How does Rust prevent data races?", "answer": "Rust prevents data races at compile time by restricting mutable references."}
+{"question": "How can we have multiple mutable references to the same data?", "answer": "We can use curly brackets to create a new scope, allowing for multiple mutable references, but not simultaneous ones."}
+{"question": "What is the rule for combining mutable and immutable references?", "answer": "We cannot have a mutable reference while we have an immutable one. However, multiple immutable references are okay."}
+{"question": "What is a dangling pointer?", "answer": "A dangling pointer is a pointer that references a location in memory that may have been given to someone else, by freeing some memory while preserving a pointer to that memory."}
+{"question": "How does Rust prevent dangling references?", "answer": "The compiler guarantees that references will never be dangling references. If you have a reference to some data, the compiler will ensure that the data will not go out of scope before the reference to the data does."}
+{"question": "What is the error message when trying to create a dangling reference in Rust?", "answer": "The error message refers to lifetimes and states that the function's return type contains a borrowed value, but there is no value for it to be borrowed from."}
+{"question": "What is the solution to the dangling reference problem?", "answer": "The solution is to return the `String` directly instead of a reference to it."}
+{"question": "What are the rules of references?", "answer": "At any given time, you can have either one mutable reference or any number of immutable references. References must always be valid."}

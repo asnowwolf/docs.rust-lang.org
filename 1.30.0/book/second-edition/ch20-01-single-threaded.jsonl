@@ -1,0 +1,43 @@
+{"question": "What are the two main protocols involved in building web servers?", "answer": "The two main protocols involved in web servers are the *Hypertext Transfer Protocol* *(HTTP)* and the *Transmission Control Protocol* *(TCP)*."}
+{"question": "What is a request-response protocol?", "answer": "A request-response protocol means a *client* initiates requests and a *server* listens to the requests and provides a response to the client."}
+{"question": "What is the purpose of TCP?", "answer": "TCP is the lower-level protocol that describes the details of how information gets from one server to another but doesn’t specify what that information is."}
+{"question": "What is the purpose of HTTP?", "answer": "HTTP builds on top of TCP by defining the contents of the requests and responses."}
+{"question": "What is a stream in the context of a web server?", "answer": "A single *stream* represents an open connection between the client and the server."}
+{"question": "What is a connection in the context of a web server?", "answer": "A *connection* is the name for the full request and response process in which a client connects to the server, the server generates a response, and the server closes the connection."}
+{"question": "What is the purpose of the `TcpListener` struct?", "answer": "The `TcpListener` struct allows us to listen for TCP connections at a specified address and port."}
+{"question": "What is the purpose of the `bind` function in the context of `TcpListener`?", "answer": "The `bind` function connects to a port to listen to, which is known as “binding to a port.”"}
+{"question": "What is the purpose of the `incoming` method in the context of `TcpListener`?", "answer": "The `incoming` method on `TcpListener` returns an iterator that gives us a sequence of streams."}
+{"question": "What is the purpose of the `read` method in the context of `TcpStream`?", "answer": "The `read` method on `TcpStream` reads bytes from the `TcpStream` and puts them in a provided buffer."}
+{"question": "What is the purpose of the `write` method in the context of `TcpStream`?", "answer": "The `write` method on `TcpStream` takes a `&[u8]` and sends those bytes directly down the connection."}
+{"question": "What is the purpose of the `flush` method in the context of `TcpStream`?", "answer": "The `flush` method waits and prevents the program from continuing until all the bytes are written to the connection."}
+{"question": "What is the format of an HTTP request?", "answer": "An HTTP request takes this format:\n\n```text\nMethod Request-URI HTTP-Version CRLF\nheaders CRLF\nmessage-body\n```"}
+{"question": "What is the purpose of the request line in an HTTP request?", "answer": "The first line is the *request line* that holds information about what the client is requesting."}
+{"question": "What is the purpose of the method in an HTTP request?", "answer": "The first part of the request line indicates the *method* being used, such as `GET` or `POST`, which describes how the client is making this request."}
+{"question": "What is the purpose of the Request-URI in an HTTP request?", "answer": "The next part of the request line is */*, which indicates the *Uniform Resource Identifier* *(URI)* the client is requesting."}
+{"question": "What is the purpose of the HTTP-Version in an HTTP request?", "answer": "The last part is the HTTP version the client uses."}
+{"question": "What is the purpose of the headers in an HTTP request?", "answer": "The remaining lines starting from `Host:` onward are headers."}
+{"question": "What is the format of an HTTP response?", "answer": "Responses have the following format:\n\n```text\nHTTP-Version Status-Code Reason-Phrase CRLF\nheaders CRLF\nmessage-body\n```"}
+{"question": "What is the purpose of the status line in an HTTP response?", "answer": "The first line is a *status line* that contains the HTTP version used in the response, a numeric status code that summarizes the result of the request, and a reason phrase that provides a text description of the status code."}
+{"question": "What is the purpose of the status code in an HTTP response?", "answer": "The status code is a numeric code that summarizes the result of the request."}
+{"question": "What is the purpose of the reason phrase in an HTTP response?", "answer": "The reason phrase provides a text description of the status code."}
+{"question": "What is the purpose of the headers in an HTTP response?", "answer": "After the CRLF sequence are any headers."}
+{"question": "What is the purpose of the message-body in an HTTP response?", "answer": "The body of the response is the data that is being sent back to the client."}
+{"question": "What is the purpose of the `starts_with` method in the context of a byte slice?", "answer": "The `starts_with` method checks whether a byte slice starts with a given byte slice."}
+{"question": "What is the purpose of the `format!` macro?", "answer": "The `format!` macro is used to create a formatted string."}
+{"question": "What is the purpose of the `as_bytes` method in the context of a string?", "answer": "The `as_bytes` method converts a string to a byte slice."}
+{"question": "What is the purpose of the `read_to_string` method in the context of a file?", "answer": "The `read_to_string` method reads the contents of a file into a string."}
+{"question": "What is the purpose of the `File::open` function?", "answer": "The `File::open` function opens a file for reading."}
+{"question": "What is the purpose of the `unwrap` method in the context of a `Result`?", "answer": "The `unwrap` method returns the value inside a `Result` if it is `Ok`, otherwise it panics."}
+{"question": "What is the purpose of the `if` and `else` blocks in the context of the code?", "answer": "The `if` and `else` blocks are used to conditionally execute different code blocks based on the value of a condition."}
+{"question": "What is the purpose of the `let` statement with a pattern?", "answer": "The `let` statement with a pattern is used to destructure a tuple or other data structure and assign the values to variables."}
+{"question": "What is the purpose of the `status_line` variable?", "answer": "The `status_line` variable holds the status line of the HTTP response."}
+{"question": "What is the purpose of the `filename` variable?", "answer": "The `filename` variable holds the name of the file to be read and sent as the response body."}
+{"question": "What is the purpose of the `contents` variable?", "answer": "The `contents` variable holds the contents of the file that is read."}
+{"question": "What is the purpose of the `response` variable?", "answer": "The `response` variable holds the complete HTTP response that is sent to the client."}
+{"question": "What is the purpose of the `handle_connection` function?", "answer": "The `handle_connection` function handles a single TCP connection from a client."}
+{"question": "What is the purpose of the `main` function?", "answer": "The `main` function is the entry point of the program."}
+{"question": "What is the purpose of the `TcpListener::bind` function?", "answer": "The `TcpListener::bind` function creates a new `TcpListener` instance that listens for connections on a specified address and port."}
+{"question": "What is the purpose of the `listener.incoming()` method?", "answer": "The `listener.incoming()` method returns an iterator that yields incoming connections."}
+{"question": "What is the purpose of the `stream.read(&mut buffer)` method?", "answer": "The `stream.read(&mut buffer)` method reads data from the TCP stream and stores it in the provided buffer."}
+{"question": "What is the purpose of the `stream.write(response.as_bytes())` method?", "answer": "The `stream.write(response.as_bytes())` method writes the bytes of the HTTP response to the TCP stream."}
+{"question": "What is the purpose of the `stream.flush()` method?", "answer": "The `stream.flush()` method ensures that all data written to the TCP stream is sent to the client."}

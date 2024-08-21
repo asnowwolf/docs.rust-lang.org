@@ -1,0 +1,17 @@
+{"question": "What is a pointer?", "answer": "A pointer is a variable that contains an address in memory, which refers to or 'points at' some other data."}
+{"question": "What is the most common kind of pointer in Rust?", "answer": "The most common kind of pointer in Rust is a reference, indicated by the `&` symbol."}
+{"question": "What is a smart pointer?", "answer": "A smart pointer is a data structure that acts like a pointer but also has additional metadata and capabilities."}
+{"question": "Where did the concept of smart pointers originate?", "answer": "Smart pointers originated in C++."}
+{"question": "What is one example of a smart pointer in Rust?", "answer": "One example is the reference counting smart pointer type, which enables multiple owners of data by keeping track of the number of owners and cleaning up the data when no owners remain."}
+{"question": "What is the difference between references and smart pointers in Rust?", "answer": "References borrow data, while smart pointers often own the data they point to."}
+{"question": "What are some examples of smart pointers we've already encountered?", "answer": "We've encountered `String` and `Vec<T>` in Chapter 8, which are both smart pointers because they own memory and allow manipulation."}
+{"question": "How are smart pointers usually implemented?", "answer": "Smart pointers are usually implemented using structs."}
+{"question": "What distinguishes a smart pointer from an ordinary struct?", "answer": "Smart pointers implement the `Deref` and `Drop` traits."}
+{"question": "What does the `Deref` trait allow?", "answer": "The `Deref` trait allows an instance of the smart pointer struct to behave like a reference, enabling code to work with either references or smart pointers."}
+{"question": "What does the `Drop` trait allow?", "answer": "The `Drop` trait allows you to customize the code that is run when an instance of the smart pointer goes out of scope."}
+{"question": "What are some of the most common smart pointers in the standard library?", "answer": "The most common smart pointers in the standard library are `Box<T>`, `Rc<T>`, `Ref<T>`, and `RefMut<T>`."}
+{"question": "What is `Box<T>` used for?", "answer": "`Box<T>` is used for allocating values on the heap."}
+{"question": "What is `Rc<T>` used for?", "answer": "`Rc<T>` is a reference counting type that enables multiple ownership."}
+{"question": "What are `Ref<T>` and `RefMut<T>` used for?", "answer": "`Ref<T>` and `RefMut<T>` are accessed through `RefCell<T>`, a type that enforces borrowing rules at runtime instead of compile time."}
+{"question": "What is interior mutability?", "answer": "Interior mutability is a pattern where an immutable type exposes an API for mutating an interior value."}
+{"question": "What are reference cycles?", "answer": "Reference cycles are situations where smart pointers can leak memory."}

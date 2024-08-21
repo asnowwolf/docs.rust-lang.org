@@ -1,0 +1,7 @@
+{"question": "What are some common programming concepts covered in this chapter?", "answer": "This chapter covers variables, basic types, functions, comments, and control flow."}
+{"question": "Why are these concepts important to learn?", "answer": "These concepts are foundational to every Rust program and will give you a strong core to start from."}
+{"question": "What are keywords in Rust?", "answer": "Keywords are reserved words that can only be used by the Rust language."}
+{"question": "Can I use keywords as names for variables or functions?", "answer": "No, keywords are reserved for use by the language only."}
+{"question": "What is the purpose of keywords in Rust?", "answer": "Most keywords have special meanings and are used to perform various tasks in Rust programs."}
+{"question": "Are all keywords currently used in Rust?", "answer": "No, some keywords have no current functionality but are reserved for future use."}
+{"question": "Where can I find a list of Rust keywords?", "answer": "You can find a list of keywords in Appendix A."}

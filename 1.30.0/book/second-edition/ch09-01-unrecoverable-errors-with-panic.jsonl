@@ -1,0 +1,22 @@
+{"question": "What is the `panic!` macro used for in Rust?", "answer": "The `panic!` macro is used to signal an unrecoverable error in your code, causing the program to print a failure message, unwind the stack, and quit."}
+{"question": "What happens when the `panic!` macro is executed?", "answer": "The program prints a failure message, unwinds the stack to clean up data, and then quits."}
+{"question": "When is the `panic!` macro typically used?", "answer": "It's commonly used when a bug is detected and the programmer doesn't know how to handle the error."}
+{"question": "What are the two options for handling a panic in Rust?", "answer": "The program can either unwind the stack and clean up data or abort immediately without cleanup."}
+{"question": "How can you switch from unwinding to aborting on panic in Rust?", "answer": "Add `panic = 'abort'` to the appropriate `[profile]` sections in your *Cargo.toml* file."}
+{"question": "What is the default behavior when a panic occurs in Rust?", "answer": "The program unwinds the stack and cleans up data from each function."}
+{"question": "What is the alternative to unwinding the stack when a panic occurs?", "answer": "The program can abort immediately, ending without cleanup."}
+{"question": "What is the benefit of using `panic = 'abort'` in your *Cargo.toml* file?", "answer": "It can make the resulting binary smaller by avoiding the overhead of unwinding the stack."}
+{"question": "What happens when you call `panic!` in a program?", "answer": "The program will print an error message, including the panic message and the location in the source code where the panic occurred."}
+{"question": "What does the error message from `panic!` include?", "answer": "It includes the panic message, the filename, and the line number where the panic occurred."}
+{"question": "What does the error message indicate if the `panic!` call is in code that your code calls?", "answer": "It will show the filename and line number of the code where the `panic!` macro is called, not the line of your code that led to the panic."}
+{"question": "How can you get a backtrace to understand the cause of a panic?", "answer": "Set the `RUST_BACKTRACE` environment variable to any value except 0."}
+{"question": "What is a backtrace?", "answer": "A backtrace is a list of all the functions that have been called to get to the point where the panic occurred."}
+{"question": "How do you read a backtrace?", "answer": "Start from the top and read until you see files you wrote. The lines above your files are code called by your code, and the lines below are code that called your code."}
+{"question": "What happens when you try to access an element beyond the end of a vector in Rust?", "answer": "Rust will panic and stop execution."}
+{"question": "Why does Rust panic when you try to access an element beyond the end of a vector?", "answer": "To prevent buffer overreads and potential security vulnerabilities."}
+{"question": "What is a buffer overread?", "answer": "A buffer overread occurs when a program attempts to access memory beyond the allocated space for a data structure, potentially leading to security vulnerabilities."}
+{"question": "How can you get a backtrace to understand the cause of a panic when accessing an element beyond the end of a vector?", "answer": "Set the `RUST_BACKTRACE` environment variable to any value except 0."}
+{"question": "What does the backtrace show when you access an element beyond the end of a vector?", "answer": "It shows the line of code in your project that caused the panic, as well as the code in the standard library that triggered the panic."}
+{"question": "Where should you start investigating when your code panics?", "answer": "The location pointed to by the first line mentioning a file you wrote in the backtrace."}
+{"question": "What is the `Result` type used for in Rust?", "answer": "The `Result` type is used to represent operations that can either succeed or fail."}
+{"question": "When should you use `panic!` to handle error conditions?", "answer": "This will be discussed in the “To `panic!` or Not to `panic!`” section later in the chapter."}

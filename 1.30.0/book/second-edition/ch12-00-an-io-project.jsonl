@@ -1,0 +1,8 @@
+{"question": "What is the purpose of this chapter?", "answer": "This chapter is a recap of the skills learned so far and an exploration of some standard library features. It will build a command line tool that interacts with file and command line input/output."}
+{"question": "What command line tool will be built in this chapter?", "answer": "The chapter will build a version of the classic command line tool `grep`."}
+{"question": "What is the simplest use case of `grep`?", "answer": "In the simplest use case, `grep` searches a specified file for a specified string. It takes a filename and a string as arguments, reads the file, finds lines containing the string, and prints those lines."}
+{"question": "What are some advantages of Rust for creating command line tools?", "answer": "Rust's speed, safety, single binary output, and cross-platform support make it ideal for creating command line tools."}
+{"question": "What are some features of the terminal that the command line tool will use?", "answer": "The tool will read the value of an environment variable to allow user configuration and print to `stderr` instead of `stdout`."}
+{"question": "What is `ripgrep`?", "answer": "A fully featured, very fast version of `grep` created by Andrew Gallant."}
+{"question": "What Rust concepts will be used in the `grep` project?", "answer": "The project will combine concepts like organizing code using modules, using vectors and strings, handling errors, using traits and lifetimes, and writing tests."}
+{"question": "What concepts will be briefly introduced in this chapter?", "answer": "The chapter will briefly introduce closures, iterators, and trait objects."}

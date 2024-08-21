@@ -1,0 +1,14 @@
+{"question": "How do I create a library crate with Cargo?", "answer": "Use the `--lib` option instead of `--bin` when running `cargo new`. For example, `cargo new communicator --lib`."}
+{"question": "What is the difference between a library crate and a binary crate?", "answer": "A library crate is a project that other people can pull into their projects as a dependency, while a binary crate is a project that can be executed directly."}
+{"question": "What file does Cargo generate for a library crate?", "answer": "Cargo generates *src/lib.rs* for a library crate."}
+{"question": "What is the purpose of the `mod` keyword in Rust?", "answer": "The `mod` keyword defines a module, which creates a namespace for code and helps organize it."}
+{"question": "How do I define a module in Rust?", "answer": "Use the `mod` keyword followed by the module name and a block of code in curly brackets. For example, `mod network { ... }`."}
+{"question": "How do I access a function defined in a module from outside the module?", "answer": "Use the namespace syntax `::` to specify the module and function name. For example, `network::connect()`."}
+{"question": "Can I have multiple modules in the same file?", "answer": "Yes, you can define multiple modules side by side in the same file."}
+{"question": "Can I nest modules inside of other modules?", "answer": "Yes, you can create a hierarchy of modules by nesting them inside of each other."}
+{"question": "What is the purpose of the `mod` keyword followed by a semicolon?", "answer": "It declares a module but tells Rust to look in another location for the code defined within the module's scope."}
+{"question": "How do I extract a module into its own file?", "answer": "1. Replace the module's body in the main file with a semicolon after the `mod` declaration. 2. Create a new file with the same name as the module and put the module's contents in it."}
+{"question": "What is the rule for naming files for modules without submodules?", "answer": "Use the module name followed by `.rs`."}
+{"question": "What is the rule for naming files for modules with submodules?", "answer": "Create a directory with the module name and put the module's declarations in a file named `mod.rs` inside the directory."}
+{"question": "Where should the submodules of a module be placed?", "answer": "They should be placed in the same directory as the parent module's `mod.rs` file."}
+{"question": "Why can't I extract a submodule into a file with the same name as a top-level module?", "answer": "Rust wouldn't be able to distinguish between the top-level module and the submodule if they were both in the same file."}
